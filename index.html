@@ -9,13 +9,11 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="file:///D:/DIFA%20Dashboard/production/index.html" type="">
 
   <title>DIFA</title>
 
   <!-- Bootstrap -->
-  <link href="./DIFA_files/bootstrap.min.css" rel="stylesheet">
-  <link href="./DIFA_files/custom.min.css" rel="stylesheet">
+  <link href="./files/bootstrap.min.css" rel="stylesheet">
 
   <style type="text/css">
     body {
@@ -96,22 +94,12 @@
           <h2 class="card-title">Selbstreguliertes Lernen</h2>
           <hr />
         </div>
-        <div class="x_content">
-
-          <!-- <img src="images/scroll_bar.gif" width="100%" alt="description of gif" />  -->
-          <div id="radar_OverallActivities"
-            style="height: 470px; width: 60%; float: left; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;"
-            _echarts_instance_="ec_1626169065918">
-            <div
-              style="position: relative; width: 588px; height: 470px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
-              <canvas data-zr-dom-id="zr_0" width="588" height="470"
-                style="position: absolute; left: 0px; top: 0px; width: 588px; height: 470px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-            </div>
-            <div class=""></div>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <canvas id="radarSRL" width="400" height="500"></canvas>
           </div>
-          <div>
+          <div class="col">
             <ul>
-
               <li>Sie weisen eine geringe Ausprägung von <b>Elaboration</b> auf. Um Ihren Lernfortschritt noch
                 effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Kehren Sie häufiger zu
                 Lernmaterialien aus anderen Lerneinheiten zurück, um Ihr Wissen zu verknüpfen und mögliche
@@ -127,7 +115,6 @@
                 effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Lesen Sie sich sorgfältig die
                 „Hinweise zur Bearbeitung der Lernmaterialien“ durch. </li>
             </ul>
-
           </div>
 
         </div>
@@ -175,7 +162,7 @@
           <div class="row">
 
             <div class="col">
-              <canvas id="barChartLE" width="400" height="300"> </canvas>
+              <canvas id="barChartLE" width="600" height="400"> </canvas>
             </div>
             <div class="col">
               <ul>
@@ -252,19 +239,20 @@
         <div class="card-body">
           <h2>Informationen über Ihr Leseverhalten</h2>
           <hr />
-          <div class="row"> 
+          <div class="row">
             <h4>Leseanalyse</h4>
-            <div class="col-8">
+            <div class="col-6">
               <div class="row">
-                <canvas id="barChartMDC" width="300" height="100"> </canvas>
+                <canvas id="barChartMDC" width="500" height="300"> </canvas>
               </div>
+              <hr/>
               <div class="row">
                 <div class="col">
-                  <h4>Wissens-Integration</h4>
+                  <h5>Wissens-Integration</h5>
                   <canvas id="donutChartMDCIntegration" width="200" height="200"> </canvas>
                 </div>
                 <div class="col">
-                  <h4>Umgang mit Meta-Informationen</h4>
+                  <h5>Umgang mit Meta-Informationen</h5>
                   <canvas id="donutChartMDCMeta" width="200" height="200"> </canvas>
                 </div>
               </div>
@@ -371,9 +359,9 @@
                 </div>
               </div> -->
 
-      </div> -->
+    </div> -->
 
-    </div>
+  </div>
   </div>
   </div>
   <!-- /page content -->
@@ -390,20 +378,18 @@
 
 
 
-  <script src="DIFA_files/shared.js"></script>
-  <script src="./DIFA_files/chart.min.js"></script>
+  <script src="./files/chart.min.js"></script>
   <!-- Bootstrap -->
-  <script src="./DIFA_files/bootstrap.min.js"></script>
+  <script src="./files/bootstrap.min.js"></script>
 
-  <!-- ECharts -->
-  <script type="text/javascript" src="./DIFA_files/echarts.min.js"></script>
-
-  <script src="./DIFA_files/barChartLE.js"></script>
-  <script src="./DIFA_files/radarChartLE.js"></script>
-  <script src="./DIFA_files/polarChartMultipleLE.js"></script>
-  <script src="./DIFA_files/radarJS.js"></script>
-  <script src="./DIFA_files/BarReading_Donut.js.download"></script>
-  <script src="./DIFA_files/barChartReading.js"></script>
+  <script type="text/javascript" src="./files/echarts.min.js"></script>
+  <script src="./files/dashboard.js"></script>
+  <!-- <script src="./files/barChartLE.js"></script>
+  <script src="./files/radarChartLE.js"></script>
+  <script src="./files/polarChartMultipleLE.js"></script>
+  <script src="./files/radarJS.js"></script>
+  <script src="./files/BarReading_Donut.js.download"></script>
+  <script src="./files/barChartReading.js"></script> -->
   <script>
 
   </script>
