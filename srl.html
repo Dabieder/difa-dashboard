@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///D:/DIFA%20Dashboard/production/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Meta, title, CSS, favicons, etc. -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DIFA</title>
+
+    <!-- Bootstrap -->
+    <link href="./files/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9375rem;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .info-details {
+            margin-bottom: 1em;
+        }
+
+        .info-text {
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+        .red-circle:before {
+            content: ' \25CF';
+            font-size: 2em;
+            color: rgb(212, 23, 23);
+        }
+
+        .yellow-circle:before {
+            content: ' \25CF';
+            font-size: 2em;
+            color: rgb(207, 207, 36);
+        }
+
+        .green-circle:before {
+            content: ' \25CF';
+            font-size: 2em;
+            color: rgb(47, 124, 47);
+        }
+    </style>
+
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+
+
+        <div class="row">
+                <div class="col-md-12">
+                    <h3>DIFA Dashboard<small></small></h3>
+                </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Selbstreguliertes Lernen</h2>
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <canvas id="radarSRL" width="400" height="500"></canvas>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>Sie weisen eine geringe Ausprägung von <b>Elaboration</b> auf. Um Ihren Lernfortschritt
+                            noch
+                            effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Kehren Sie häufiger
+                            zu
+                            Lernmaterialien aus anderen Lerneinheiten zurück, um Ihr Wissen zu verknüpfen und
+                            mögliche
+                            Wissenslücken zu füllen.</li>
+                        <li>Sie weisen eine hohe Ausprägung von <b>Regulation</b> auf. Toll! Wir empfehlen Ihnen,
+                            diese
+                            Verhaltensweise beizubehalten. Zusätzliche Tipps für die Bearbeitung weiterer
+                            Lernmaterialien:
+                            Schauen Sie nach dem Ergebnis Ihres Selbsttest die Lernmaterialien wieder an, damit Sie
+                            Wissenslücken schließen.</li>
+                        <li>Sie weisen eine angemessene Ausprägung von <b>Überwachung</b> auf. Um Ihren
+                            Lernfortschritt
+                            noch effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Schauen Sie sich
+                            während
+                            des Selbsttests die Lernmaterialien häufiger an, um ihre Antworten zu überprüfen. </li>
+                        <li>Sie weisen eine angemessene Ausprägung von <b>Planung</b> auf. Um Ihren Lernfortschritt
+                            noch
+                            effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Lesen Sie sich
+                            sorgfältig die
+                            „Hinweise zur Bearbeitung der Lernmaterialien“ durch. </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex flex-row-reverse">
+            <div>
+                <a class="btn btn-primary mr-3" type="button" role="button" href="instructions.html">Zurück</a>
+                <a class="btn btn-primary" type="button" role="button" href="eng.html">Weiter</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./files/chart.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./files/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="./files/echarts.min.js"></script>
+    <script src="files/shared.js"></script>
+    <script src="./files/dashboard_srl.js"></script>
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>

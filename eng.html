@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///D:/DIFA%20Dashboard/production/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Meta, title, CSS, favicons, etc. -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DIFA</title>
+
+    <!-- Bootstrap -->
+    <link href="./files/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9375rem;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .info-details {
+            margin-bottom: 1em;
+        }
+
+        .info-text {
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+        .red-circle:before {
+            content: ' \25CF';
+            font-size: 2em;
+            color: rgb(212, 23, 23);
+        }
+
+        .yellow-circle:before {
+            content: ' \25CF';
+            font-size: 2em;
+            color: rgb(207, 207, 36);
+        }
+
+        .green-circle:before {
+            content: ' \25CF';
+            font-size: 2em;
+            color: rgb(47, 124, 47);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container body">
+
+        <div class="card">
+            <div class="card-body">
+                <!-- <h2 >Engagement drei Polar</h2> -->
+                <h2 class="card-title">Lernaktivitäten</h2>
+                <hr />
+                <div class="row">
+                    <h4>Lernfreude</h4>
+                    <hr />
+                    <div class="col">
+                        <canvas id="polarChartLE1"> </canvas>
+                    </div>
+                    <div class="col-8">
+                        <p>
+                            Ihr Lernverhalten während der aktuellen Lerneinheit lässt darauf schließen, dass sie eine
+                            hohe Freude am Lernen aufweisen.
+                            Ihre Bereitschaft sich mit den Lernmaterialien inhaltlich auseinanderzusetzen und die von
+                            Ihnen investierte Lernzeit sind vorbildlich.
+
+                        </p>
+                        <details class="info-details">
+                            <summary><span>Klicken Sie hier, um Empfehlungen für eine größere <b>Lernfreude</b> zu
+                                    erhalten</span>
+                            </summary>
+                            <p class="into-text">
+                                Ihre Lernfreude ist zu niedrig. Sie sollten sich auf jeden Fall mehr freuen beim
+                                Lernen.</li>
+                            </p>
+                        </details>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Lerninteresse</h4>
+                    <hr />
+                    <div class="col">
+                        <canvas id="polarChartLE2"> </canvas>
+                    </div>
+                    <div class="col-8">
+                        <p>
+                            Ihr Lernverhalten während der aktuellen Lerneinheit lässt darauf schließen, dass sie
+                            eine angemessene Ausprägung von „Lernengagement“ aufweisen.
+                            Das bedeutet, dass Sie sich in ausreichendem Umfang mit den Lernmaterialien inhaltlich
+                            auseinandergesetzt und ausreichend Lernzeit investiert haben.
+
+                        </p>
+                        <details class="info-details">
+
+                            <summary>Klicken hier hier, um Informationen zu Steigerung Ihres <b>Lerninteresses</b> zu
+                                erhalten
+                            </summary>
+                            <p class="into-text">
+                                Sie scheinen den Lernstoff nicht so spannend zu finden. Studieren Sie doch
+                                vielleicht besser erwas
+                                anderes.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Lernzeit</h4>
+                    <hr />
+                    <div class="col">
+                        <canvas id="polarChartLE3"> </canvas>
+                    </div>
+                    <div class="col-8">
+                        <p>Ihr Lernverhalten während der aktuellen Lerneinheit lässt darauf schließen, dass sie eine
+                            geringe Ausprägung von „Lernengagement“ aufweisen.
+                            Das bedeutet, dass Sie sich nur in geringem Umfang inhaltlich mit den Lernmaterialien
+                            auseinandergesetzt und nicht ausreichend Lernzeit investiert haben.
+                        </p>
+                        <details class="info-details">
+                            <summary>Klicken hier hier, um Informationen über eine bessere Nutzung Ihrer <b>Lernzeit</b>
+                                zu erhalten
+                            </summary>
+                            <p class="into-text">
+                                Sie wenden durchschnittlich viel Zeit für das Lernen auf. Das ist okay.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex flex-row-reverse">
+            <div>
+                <a class="btn btn-primary mr-3" type="button" role="button" href="srl.html">Zurück</a>
+                <a class="btn btn-primary" type="button" role="button" href="mdc.html">Weiter</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="./files/chart.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./files/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="./files/echarts.min.js"></script>
+    <script src="files/shared.js"></script>
+    <script src="./files/dashboard_eng.js"></script>
+    <!-- <script src="./files/barChartLE.js"></script>
+  <script src="./files/radarChartLE.js"></script>
+  <script src="./files/polarChartMultipleLE.js"></script>
+  <script src="./files/radarJS.js"></script>
+  <script src="./files/BarReading_Donut.js.download"></script>
+  <script src="./files/barChartReading.js"></script> -->
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
