@@ -58,86 +58,46 @@
 <body>
     <div class="container body">
 
-        <div class="card">
-            <div class="card-body">
-                <!-- <h2 >Engagement drei Polar</h2> -->
-                <h2 class="card-title">Lernaktivitäten</h2>
-                <hr />
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-eng">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panel-eng"
+                        aria-controls="panel-eng">
+                        Lernaktivität
+                    </button>
+                </h2>
                 <div class="row">
-                    <h4>Lernfreude</h4>
-                    <hr />
                     <div class="col">
-                        <canvas id="polarChartLE1"> </canvas>
-                    </div>
-                    <div class="col-8">
-                        <p>
-                            Ihr Lernverhalten während der aktuellen Lerneinheit lässt darauf schließen, dass sie eine
-                            hohe Freude am Lernen aufweisen.
-                            Ihre Bereitschaft sich mit den Lernmaterialien inhaltlich auseinanderzusetzen und die von
-                            Ihnen investierte Lernzeit sind vorbildlich.
+                        <div id="panel-eng" class="accordion-collapse collapse show" aria-labelledby="heading-eng">
+                            <div class="row">
+                                <div class="col">
+                                    <canvas id="canvas-eng" height="400" width="600">
+                                    </canvas>
+                                </div>
+                                <div class="col">
 
-                        </p>
-                        <details class="info-details">
-                            <summary><span>Klicken Sie hier, um Empfehlungen für eine größere <b>Lernfreude</b> zu
-                                    erhalten</span>
-                            </summary>
-                            <p class="into-text">
-                                Ihre Lernfreude ist zu niedrig. Sie sollten sich auf jeden Fall mehr freuen beim
-                                Lernen.</li>
-                            </p>
-                        </details>
+                                    <p>Aufmerksamkeit Feedback</p>
+                                    <p>Anstrengungsbereitschaft Feedback</p>
+                                    <p>Interesse am Lerngegenstand Feedback</p>
 
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradioFeedbackENG"
+                                            id="btnradioFeedbackENG1" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradioFeedbackENG1">Das
+                                            war
+                                            hilfreich</label>
 
+                                        <input type="radio" class="btn-check" name="btnradioFeedbackENG"
+                                            id="btnradioFeedbackENG2" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradioFeedbackENG2">Das
+                                            war nicht
+                                            hilfreich</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <h4>Lerninteresse</h4>
-                    <hr />
-                    <div class="col">
-                        <canvas id="polarChartLE2"> </canvas>
-                    </div>
-                    <div class="col-8">
-                        <p>
-                            Ihr Lernverhalten während der aktuellen Lerneinheit lässt darauf schließen, dass sie
-                            eine angemessene Ausprägung von „Lernengagement“ aufweisen.
-                            Das bedeutet, dass Sie sich in ausreichendem Umfang mit den Lernmaterialien inhaltlich
-                            auseinandergesetzt und ausreichend Lernzeit investiert haben.
 
-                        </p>
-                        <details class="info-details">
-
-                            <summary>Klicken hier hier, um Informationen zu Steigerung Ihres <b>Lerninteresses</b> zu
-                                erhalten
-                            </summary>
-                            <p class="into-text">
-                                Sie scheinen den Lernstoff nicht so spannend zu finden. Studieren Sie doch
-                                vielleicht besser erwas
-                                anderes.
-                            </p>
-                        </details>
-                    </div>
-                </div>
-                <div class="row">
-                    <h4>Lernzeit</h4>
-                    <hr />
-                    <div class="col">
-                        <canvas id="polarChartLE3"> </canvas>
-                    </div>
-                    <div class="col-8">
-                        <p>Ihr Lernverhalten während der aktuellen Lerneinheit lässt darauf schließen, dass sie eine
-                            geringe Ausprägung von „Lernengagement“ aufweisen.
-                            Das bedeutet, dass Sie sich nur in geringem Umfang inhaltlich mit den Lernmaterialien
-                            auseinandergesetzt und nicht ausreichend Lernzeit investiert haben.
-                        </p>
-                        <details class="info-details">
-                            <summary>Klicken hier hier, um Informationen über eine bessere Nutzung Ihrer <b>Lernzeit</b>
-                                zu erhalten
-                            </summary>
-                            <p class="into-text">
-                                Sie wenden durchschnittlich viel Zeit für das Lernen auf. Das ist okay.
-                            </p>
-                        </details>
-                    </div>
                 </div>
             </div>
         </div>
@@ -162,7 +122,7 @@
 
     <script type="text/javascript" src="./files/echarts.min.js"></script>
     <script src="files/shared.js"></script>
-    <script src="./files/dashboard_eng.js"></script>
+    <script src="./files/dashboard.js"></script>
     <!-- <script src="./files/barChartLE.js"></script>
   <script src="./files/radarChartLE.js"></script>
   <script src="./files/polarChartMultipleLE.js"></script>
@@ -170,7 +130,7 @@
   <script src="./files/BarReading_Donut.js.download"></script>
   <script src="./files/barChartReading.js"></script> -->
     <script>
-
+        createLEBarChart(2);
     </script>
 
 

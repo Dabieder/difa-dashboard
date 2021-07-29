@@ -55,80 +55,105 @@
 
 </head>
 
-<body class="nav-md">
-    <div class="container body">
+<body class="nav-md h-100">
+    <div class="container d-flex h-100">
+        <div class="row justify-content-center align-self-center">
+            <div class="card">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-srl">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panel-srl" aria-controls="panel-srl">
+                                Selbstreguliertes Lernen
+                            </button>
+                        </h2>
+                        <div id="panel-srl" class="accordion-collapse collapse show" aria-labelledby="heading-srl">
+                            <div class="row">
+                                <div class="col">
+                                    <canvas id="canvas-srl" width="600" height="400"></canvas>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li>Sie weisen eine geringe Ausprägung von <b>Elaboration</b> auf. Um Ihren
+                                            Lernfortschritt
+                                            noch
+                                            effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Kehren
+                                            Sie
+                                            häufiger
+                                            zu
+                                            Lernmaterialien aus anderen Lerneinheiten zurück, um Ihr Wissen zu
+                                            verknüpfen
+                                            und
+                                            mögliche
+                                            Wissenslücken zu füllen.</li>
+                                        <li>Sie weisen eine hohe Ausprägung von <b>Regulation</b> auf. Toll! Wir
+                                            empfehlen
+                                            Ihnen,
+                                            diese
+                                            Verhaltensweise beizubehalten. Zusätzliche Tipps für die Bearbeitung
+                                            weiterer
+                                            Lernmaterialien:
+                                            Schauen Sie nach dem Ergebnis Ihres Selbsttest die Lernmaterialien wieder
+                                            an,
+                                            damit Sie
+                                            Wissenslücken schließen.</li>
+                                        <li>Sie weisen eine angemessene Ausprägung von <b>Überwachung</b> auf. Um Ihren
+                                            Lernfortschritt
+                                            noch effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps:
+                                            Schauen
+                                            Sie sich
+                                            während
+                                            des Selbsttests die Lernmaterialien häufiger an, um ihre Antworten zu
+                                            überprüfen. </li>
+                                        <li>Sie weisen eine angemessene Ausprägung von <b>Planung</b> auf. Um Ihren
+                                            Lernfortschritt noch effizienter zu gestalten empfehlen wir Ihnen daher
+                                            folgende
+                                            Tipps: Lesen Sie
+                                            sich sorgfältig die „Hinweise zur Bearbeitung der Lernmaterialien“ durch.
+                                        </li>
+                                    </ul>
 
 
-        <div class="row">
-                <div class="col-md-12">
-                    <h3>DIFA Dashboard<small></small></h3>
+                                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                            id="btnradioFeedbackSRL1" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradioFeedbackSRL1">Das war
+                                            hilfreich</label>
+
+                                        <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                            id="btnradioFeedbackSRL2" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btnradioFeedbackSRL2">Das war nicht
+                                            hilfreich</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="d-flex flex-row-reverse">
+                    <div>
+                        <a class="btn btn-primary mr-3" type="button" role="button" href="instructions.html">Zurück</a>
+                        <a class="btn btn-primary" type="button" role="button" href="eng.html">Weiter</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
 
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">Selbstreguliertes Lernen</h2>
-                <hr />
-            </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <canvas id="radarSRL" width="400" height="500"></canvas>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li>Sie weisen eine geringe Ausprägung von <b>Elaboration</b> auf. Um Ihren Lernfortschritt
-                            noch
-                            effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Kehren Sie häufiger
-                            zu
-                            Lernmaterialien aus anderen Lerneinheiten zurück, um Ihr Wissen zu verknüpfen und
-                            mögliche
-                            Wissenslücken zu füllen.</li>
-                        <li>Sie weisen eine hohe Ausprägung von <b>Regulation</b> auf. Toll! Wir empfehlen Ihnen,
-                            diese
-                            Verhaltensweise beizubehalten. Zusätzliche Tipps für die Bearbeitung weiterer
-                            Lernmaterialien:
-                            Schauen Sie nach dem Ergebnis Ihres Selbsttest die Lernmaterialien wieder an, damit Sie
-                            Wissenslücken schließen.</li>
-                        <li>Sie weisen eine angemessene Ausprägung von <b>Überwachung</b> auf. Um Ihren
-                            Lernfortschritt
-                            noch effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Schauen Sie sich
-                            während
-                            des Selbsttests die Lernmaterialien häufiger an, um ihre Antworten zu überprüfen. </li>
-                        <li>Sie weisen eine angemessene Ausprägung von <b>Planung</b> auf. Um Ihren Lernfortschritt
-                            noch
-                            effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Lesen Sie sich
-                            sorgfältig die
-                            „Hinweise zur Bearbeitung der Lernmaterialien“ durch. </li>
-                    </ul>
-                </div>
 
-            </div>
-        </div>
+        <script src="./files/chart.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="./files/bootstrap.min.js"></script>
 
-        <div class="d-flex flex-row-reverse">
-            <div>
-                <a class="btn btn-primary mr-3" type="button" role="button" href="instructions.html">Zurück</a>
-                <a class="btn btn-primary" type="button" role="button" href="eng.html">Weiter</a>
-            </div>
-        </div>
+        <script type="text/javascript" src="./files/echarts.min.js"></script>
+        <script src="files/shared.js"></script>
+        <script src="./files/dashboard.js"></script>
 
-    </div>
-
-
-
-
-    <script src="./files/chart.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="./files/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="./files/echarts.min.js"></script>
-    <script src="files/shared.js"></script>
-    <script src="./files/dashboard_srl.js"></script>
-
-    <script>
-
-    </script>
+        <script>
+            createSRLBarChart(2);
+        </script>
 
 
 </body>

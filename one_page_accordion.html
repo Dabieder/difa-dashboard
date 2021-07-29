@@ -56,371 +56,291 @@
 </head>
 
 <body>
-    <div class="container body">
-        <div class="main_container">
+    <div class="container">
 
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="row x_title">
-                        <div class="col-md-12">
-                            <h3>DIFA Dashboard<small></small></h3>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row x_title">
+                    <div class="col-md-12">
+                        <h3>DIFA Dashboard<small></small></h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Instruktionen für das Dashboard</h2>
+                <hr />
+                <div class="card-text">
+                    <p>Auf dieser Seite erhalten Sie Feedback über Ihr beobachtbares Lernverhalten.</p>
+                    <p>An dieser Stelle werden einmal Hinweise stehen, wie Sie dieses Feedback interpretieren
+                        könnten.</p>
+                    <p>Wenn Sie die Seite neu laden, werden neue Werte generiert.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="btn-group m-3" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="radio" name="radio-assignment" onClick="redrawDashboard(0);" class="btn-check" id="btncheck1"
+                autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">Lerneinheit 1</label>
+
+            <input type="radio" name="radio-assignment" onClick="redrawDashboard(1);" class="btn-check" id="btncheck2"
+                autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck2">Lerneinheit 2</label>
+
+            <input type="radio" name="radio-assignment" onClick="redrawDashboard(2);" class="btn-check" id="btncheck3"
+                autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3">Lerneinheit 3</label>
+
+            <input type="radio" name="radio-assignment" onClick="redrawDashboard(3);" class="btn-check" id="btncheck4"
+                autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck4">Lerneinheit 4</label>
+
+            <input type="radio" name="radio-assignment" onClick="redrawDashboard(4);" class="btn-check" id="btncheck5"
+                autocomplete="off" disabled>
+            <label class="btn btn-outline-secondary" for="btncheck5">Lerneinheit 5</label>
+
+            <input type="radio" name="radio-assignment" onClick="drawTrend();" class="btn-check" id="btncheck6"
+                autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck6">Trend</label>
+        </div>
+
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-srl">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panel-srl"
+                        aria-controls="panel-srl">
+                        Selbstreguliertes Lernen
+                    </button>
+                </h2>
+                <div id="panel-srl" class="accordion-collapse collapse show" aria-labelledby="heading-srl">
+                    <div class="row">
+                        <div class="col">
+                            <canvas id="canvas-srl" width="600" height="400"></canvas>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li>Sie weisen eine geringe Ausprägung von <b>Elaboration</b> auf. Um Ihren
+                                    Lernfortschritt
+                                    noch
+                                    effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Kehren Sie
+                                    häufiger
+                                    zu
+                                    Lernmaterialien aus anderen Lerneinheiten zurück, um Ihr Wissen zu verknüpfen
+                                    und
+                                    mögliche
+                                    Wissenslücken zu füllen.</li>
+                                <li>Sie weisen eine hohe Ausprägung von <b>Regulation</b> auf. Toll! Wir empfehlen
+                                    Ihnen,
+                                    diese
+                                    Verhaltensweise beizubehalten. Zusätzliche Tipps für die Bearbeitung weiterer
+                                    Lernmaterialien:
+                                    Schauen Sie nach dem Ergebnis Ihres Selbsttest die Lernmaterialien wieder an,
+                                    damit Sie
+                                    Wissenslücken schließen.</li>
+                                <li>Sie weisen eine angemessene Ausprägung von <b>Überwachung</b> auf. Um Ihren
+                                    Lernfortschritt
+                                    noch effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Schauen
+                                    Sie sich
+                                    während
+                                    des Selbsttests die Lernmaterialien häufiger an, um ihre Antworten zu
+                                    überprüfen. </li>
+                                <li>Sie weisen eine angemessene Ausprägung von <b>Planung</b> auf. Um Ihren
+                                    Lernfortschritt noch effizienter zu gestalten empfehlen wir Ihnen daher folgende
+                                    Tipps: Lesen Sie
+                                    sich sorgfältig die „Hinweise zur Bearbeitung der Lernmaterialien“ durch. </li>
+                            </ul>
+
+
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                    id="btnradioFeedbackSRL1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackSRL1">Das war
+                                    hilfreich</label>
+
+                                <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                    id="btnradioFeedbackSRL2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackSRL2">Das war nicht
+                                    hilfreich</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-eng">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panel-eng" aria-controls="panel-eng">
+                            Lernaktivität
+                        </button>
+                    </h2>
+                    <div class="row">
+                        <div class="col">
+                            <div id="panel-eng" class="accordion-collapse collapse show" aria-labelledby="heading-eng">
+                                <div class="row">
+                                    <div class="col">
+                                        <canvas id="canvas-eng" height="400" width="600">
+                                        </canvas>
+                                    </div>
+                                    <div class="col">
+
+                                        <p>Aufmerksamkeit Feedback</p>
+                                        <p>Anstrengungsbereitschaft Feedback</p>
+                                        <p>Interesse am Lerngegenstand Feedback</p>
+
+                                        <div class="btn-group" role="group"
+                                            aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="btnradioFeedbackENG"
+                                                id="btnradioFeedbackENG1" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradioFeedbackENG1">Das
+                                                war
+                                                hilfreich</label>
+
+                                            <input type="radio" class="btn-check" name="btnradioFeedbackENG"
+                                                id="btnradioFeedbackENG2" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradioFeedbackENG2">Das
+                                                war nicht
+                                                hilfreich</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Instruktionen für das Dashboard</h2>
-                    <hr />
-                    <div class="card-text">
-                        <p>Auf dieser Seite erhalten Sie Feedback über Ihr beobachtbares Lernverhalten.</p>
-                        <p>An dieser Stelle werden einmal Hinweise stehen, wie Sie dieses Feedback interpretieren
-                            könnten.</p>
-                        <p>Wenn Sie die Seite neu laden, werden neue Werte generiert.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="btn-group m-3" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="radio" name="radio-assignment" onClick="redrawDashboard(0);" class="btn-check"
-                    id="btncheck1" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck1">Lerneinheit 1</label>
-
-                <input type="radio" name="radio-assignment" onClick="redrawDashboard(1);" class="btn-check"
-                    id="btncheck2" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck2">Lerneinheit 2</label>
-
-                <input type="radio" name="radio-assignment" onClick="redrawDashboard(2);" class="btn-check"
-                    id="btncheck3" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck3">Lerneinheit 3</label>
-
-                <input type="radio" name="radio-assignment" onClick="redrawDashboard(3);" class="btn-check"
-                    id="btncheck4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck4">Lerneinheit 4</label>
-
-                <input type="radio" name="radio-assignment" onClick="redrawDashboard(4);" class="btn-check"
-                    id="btncheck5" autocomplete="off" disabled>
-                <label class="btn btn-outline-secondary" for="btncheck5">Lerneinheit 5</label>
-
-                <input type="radio" name="radio-assignment" onClick="drawTrend();" class="btn-check" id="btncheck6"
-                    autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck6">Trend</label>
             </div>
 
 
             <div class="accordion">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading-srl">
+                    <h2 class="accordion-header" id="heading-mdc">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panel-srl" aria-controls="panel-srl">
-                            Selbstreguliertes Lernen
+                            data-bs-target="#panel-mdc" aria-controls="panel-mdc">
+                            Information zu Ihrem Leseverhalten
                         </button>
                     </h2>
-                    <div id="panel-srl" class="accordion-collapse collapse show" aria-labelledby="heading-srl">
-                        <div class="row">
-                            <div class="col d-flex justify-content-center">
-                                <canvas id="canvas-srl" width="600" height="400"></canvas>
-                            </div>
-                            <div class="col">
-                                <ul>
-                                    <li>Sie weisen eine geringe Ausprägung von <b>Elaboration</b> auf. Um Ihren
-                                        Lernfortschritt
-                                        noch
-                                        effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Kehren Sie
-                                        häufiger
-                                        zu
-                                        Lernmaterialien aus anderen Lerneinheiten zurück, um Ihr Wissen zu verknüpfen
-                                        und
-                                        mögliche
-                                        Wissenslücken zu füllen.</li>
-                                    <li>Sie weisen eine hohe Ausprägung von <b>Regulation</b> auf. Toll! Wir empfehlen
-                                        Ihnen,
-                                        diese
-                                        Verhaltensweise beizubehalten. Zusätzliche Tipps für die Bearbeitung weiterer
-                                        Lernmaterialien:
-                                        Schauen Sie nach dem Ergebnis Ihres Selbsttest die Lernmaterialien wieder an,
-                                        damit Sie
-                                        Wissenslücken schließen.</li>
-                                    <li>Sie weisen eine angemessene Ausprägung von <b>Überwachung</b> auf. Um Ihren
-                                        Lernfortschritt
-                                        noch effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Schauen
-                                        Sie sich
-                                        während
-                                        des Selbsttests die Lernmaterialien häufiger an, um ihre Antworten zu
-                                        überprüfen. </li>
-                                    <li>Sie weisen eine angemessene Ausprägung von <b>Planung</b> auf. Um Ihren
-                                        Lernfortschritt noch effizienter zu gestalten empfehlen wir Ihnen daher folgende
-                                        Tipps: Lesen Sie
-                                        sich sorgfältig die „Hinweise zur Bearbeitung der Lernmaterialien“ durch. </li>
-                                </ul>
-
-
-                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
-                                        id="btnradioFeedbackSRL1" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="btnradioFeedbackSRL1">Das war
-                                        hilfreich</label>
-
-                                    <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
-                                        id="btnradioFeedbackSRL2" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="btnradioFeedbackSRL2">Das war nicht
-                                        hilfreich</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading-eng">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panel-eng" aria-controls="panel-eng">
-                                Lernaktivität
-                            </button>
-                        </h2>
-                        <div class="row">
-                            <div class="col">
-                                <div id="panel-eng" class="accordion-collapse collapse show"
-                                    aria-labelledby="heading-eng">
-                                    <div class="row">
-                                        <div class="col">
-                                            <canvas id="canvas-eng" height="400" width="600">
-                                            </canvas>
+                    <div id="panel-mdc" class="accordion-collapse collapse show" aria-labelledby="heading-mdc">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <h4>Leseanalyse</h4>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <canvas id="canvas-bar-mdc" width="500" height="300"> </canvas>
                                         </div>
-                                        <div class="col">
-
-                                            <p>Aufmerksamkeit Feedback</p>
-                                            <p>Anstrengungsbereitschaft Feedback</p>
-                                            <p>Interesse am Lerngegenstand Feedback</p>
-
-                                            <div class="btn-group" role="group"
-                                                aria-label="Basic radio toggle button group">
-                                                <input type="radio" class="btn-check" name="btnradioFeedbackENG"
-                                                    id="btnradioFeedbackENG1" autocomplete="off">
-                                                <label class="btn btn-outline-primary" for="btnradioFeedbackENG1">Das
-                                                    war
-                                                    hilfreich</label>
-
-                                                <input type="radio" class="btn-check" name="btnradioFeedbackENG"
-                                                    id="btnradioFeedbackENG2" autocomplete="off">
-                                                <label class="btn btn-outline-primary" for="btnradioFeedbackENG2">Das
-                                                    war nicht
-                                                    hilfreich</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading-mdc">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panel-mdc" aria-controls="panel-mdc">
-                                Information zu Ihrem Leseverhalten
-                            </button>
-                        </h2>
-                        <div id="panel-mdc" class="accordion-collapse collapse show" aria-labelledby="heading-mdc">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <h4>Leseanalyse</h4>
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <canvas id="canvas-bar-mdc" width="500" height="300"> </canvas>
-                                            </div>
-                                            <hr />
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h5>Wissens-Integration</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-bar bg-warning" role="progressbar"
-                                                            style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                                            aria-valuemax="100">25%</div>
-                                                    </div>
+                                        <hr />
+                                        <div class="row">
+                                            <div class="col">
+                                                <h5>Wissens-Integration</h5>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-warning" role="progressbar"
+                                                        style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                                                        aria-valuemax="100">25%</div>
                                                 </div>
-                                                <div class="col">
-                                                    <h5>Umgang mit Meta-Informationen</h5>
-                                                    <div class="progress">
-                                                        <div class="progress-bar bg-success" role="progressbar"
-                                                            style="width: 55%" aria-valuenow="55" aria-valuemin="0"
-                                                            aria-valuemax="100">55%</div>
-                                                    </div>
+                                            </div>
+                                            <div class="col">
+                                                <h5>Umgang mit Meta-Informationen</h5>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        style="width: 55%" aria-valuenow="55" aria-valuemin="0"
+                                                        aria-valuemax="100">55%</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <ul>
-                                                Ihr Umgang mit den Texten in dieser Lerneinheit lässt darauf schließen,
-                                                dass
-                                                Sie ein
-                                                insgesamt
-                                                gutes
-                                                Verständnis vom Thema entwickelt haben.
-                                                <br><br>
-                                                Sie haben: <br><br>
-                                                <li>sich genug Zeit für
-                                                    die Bearbeitung der Lernmaterialien genommen.</li>
-                                                <li>sich in einem
-                                                    angemessenen Umfang mit den inhaltlichen Bezügen zwischen den
-                                                    Materialien
-                                                    auseinandergesetzt.</li>
-                                                <li>sich in
-                                                    herausragendem
-                                                    Umfang mit Metainformationen zu den Lernmaterialien
-                                                    auseinandergesetzt.
-                                                </li>
-                                                <br>
-                                                Zusätzliche Tipps:<br>
-                                                Wir empfehlen Ihnen,
-                                                diese Verhaltensweisen beizubehalten
-                                            </ul>
-
-
-                                            <div class="btn-group" role="group"
-                                                aria-label="Basic radio toggle button group">
-                                                <input type="radio" class="btn-check" name="btnradioFeedbackMDC"
-                                                    id="btnradioFeedbackMDC1" autocomplete="off">
-                                                <label class="btn btn-outline-primary" for="btnradioFeedbackMDC1">Das
-                                                    war
-                                                    hilfreich</label>
-
-                                                <input type="radio" class="btn-check" name="btnradioFeedbackMDC"
-                                                    id="btnradioFeedbackMDC2" autocomplete="off">
-                                                <label class="btn btn-outline-primary" for="btnradioFeedbackMDC2">Das
-                                                    war
-                                                    nicht
-                                                    hilfreich</label>
-                                            </div>
-                                        </div>
-
-
-
                                     </div>
+                                    <div class="col">
+                                        <p>
+                                            Ihr Umgang mit den Texten in dieser Lerneinheit lässt darauf schließen,
+                                            dass
+                                            Sie ein
+                                            insgesamt
+                                            gutes
+                                            Verständnis vom Thema entwickelt haben.
+                                            <br><br>
+                                            Sie haben: <br><br>
+                                        </p>
+                                        <ul>
+
+                                            <li>sich genug Zeit für
+                                                die Bearbeitung der Lernmaterialien genommen.</li>
+                                            <li>sich in einem
+                                                angemessenen Umfang mit den inhaltlichen Bezügen zwischen den
+                                                Materialien
+                                                auseinandergesetzt.</li>
+                                            <li>sich in
+                                                herausragendem
+                                                Umfang mit Metainformationen zu den Lernmaterialien
+                                                auseinandergesetzt.
+                                            </li>
+                                            <br>
+                                            Zusätzliche Tipps:<br>
+                                            Wir empfehlen Ihnen,
+                                            diese Verhaltensweisen beizubehalten
+                                        </ul>
+
+
+                                        <div class="btn-group" role="group"
+                                            aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="btnradioFeedbackMDC"
+                                                id="btnradioFeedbackMDC1" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradioFeedbackMDC1">Das
+                                                war
+                                                hilfreich</label>
+
+                                            <input type="radio" class="btn-check" name="btnradioFeedbackMDC"
+                                                id="btnradioFeedbackMDC2" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradioFeedbackMDC2">Das
+                                                war
+                                                nicht
+                                                hilfreich</label>
+                                        </div>
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-header">Reflektionen zu Ihrem Lernverhalten</h2>
-                            <p>
-                                Schreiben Sie bitte in dem unteren Textfeld auf, wie Sie ihr Lernen basierend auf dem
-                                oben
-                                genannten Feedback anpassen wollen.
-                            </p>
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                    style="height: 100px"></textarea>
-                                <label for="floatingTextarea2"></label>
-                            </div>
-                            <button type="button" class="mt-3 btn btn-primary" value="Abschicken">Speichern</button>
-                        </div>
-                    </div>
-
-                    <!-- <div class="card">
-
-        <div class="x_panel">
-          <div class="x_title">
-            <h2>Reading analytics</h2>
-            <h2 style="float: right; padding-right: 25%;">Rückmeldung</h2>
-            <div class="clearfix"></div>
-          </div>
-          <div class="x_content">
-
-            <div id="echart_bar_reading"
-              style="height: 370px; width: 60%; float: left; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;"
-              _echarts_instance_="ec_1626169065919">
-              <div
-                style="position: relative; width: 588px; height: 370px; padding: 0px; margin: 0px; border-width: 0px;">
-                <canvas data-zr-dom-id="zr_0" width="588" height="370"
-                  style="position: absolute; left: 0px; top: 0px; width: 588px; height: 370px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-              </div>
-              <div class=""></div>
-            </div>
-
-            <div style="height:370px; width: 40%; padding-left: 0%; float: right;">
-              <ul>
-                Ihr Umgang mit den Texten in dieser Lerneinheit lässt darauf schließen, dass Sie ein insgesamt gutes
-                Verständnis vom Thema entwickelt haben.
-                <br><br>
-                Sie haben: <br><br>
-                <li>sich genug Zeit für
-                  die Bearbeitung der Lernmaterialien genommen.</li>
-                <li>sich in einem
-                  angemessenen Umfang mit den inhaltlichen Bezügen zwischen den Materialien
-                  auseinandergesetzt.</li>
-                <li>sich in
-                  herausragendem
-                  Umfang mit Metainformationen zu den Lernmaterialien auseinandergesetzt.</li>
-                <br>
-                Zusätzliche Tipps:<br>
-                Wir empfehlen Ihnen,
-                diese Verhaltensweisen beizubehalten
-              </ul>
-            </div>
-
-            <div id="donutChart"
-              style="width: 80%; float: left; height: 400px; margin-bottom: -260px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative;"
-              _echarts_instance_="ec_1626169065920">
-              <div
-                style="position: relative; width: 784px; height: 400px; padding: 0px; margin: 0px; border-width: 0px;">
-                <canvas data-zr-dom-id="zr_0" width="784" height="400"
-                  style="position: absolute; left: 0px; top: 0px; width: 784px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-              </div>
-              <div class=""></div>
-            </div>
-            <br>
-            <br>
-            <div style="width: 80%; float: left;">
-              <span>
-                <p style="float: left; padding-left: 20%;"> Wissens-integration </p>
-                <p style="float: right; padding-right: 25%;">Umgang Meta-Infos </p>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-md-6 col-sm-4 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Performance</h2>
-                 
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-
-                    <div id="echart_pie" style="height:370px"></div>
-
-                  </div>
                 </div>
-              </div> -->
+            </div>
 
-                </div> -->
 
+
+
+
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-header">Reflektionen zu Ihrem Lernverhalten</h2>
+                    <p>
+                        Schreiben Sie bitte in dem unteren Textfeld auf, wie Sie ihr Lernen basierend auf dem
+                        oben
+                        genannten Feedback anpassen wollen.
+                    </p>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2"></label>
+                    </div>
+                    <button type="button" class="mt-3 btn btn-primary" value="Abschicken">Speichern</button>
+                </div>
             </div>
         </div>
     </div>
-    <!-- /page content -->
-
+    </div>
     <!-- footer content -->
     <footer style="margin-left: 0px">
         <div class="pull-right">
-            DIFA
+            <a href="index.html">DiFA</a>
         </div>
         <div class="clearfix"></div>
     </footer>
