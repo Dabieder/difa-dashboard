@@ -157,7 +157,37 @@
                             </ul>
 
 
-                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <div class="d-flex flex-row align-items-center">
+                                Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                        id="btnradioFeedbackSRL1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradioFeedbackSRL1">Gar nicht</label>
+
+
+                                    <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                        id="btnradioFeedbackSRL3" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradioFeedbackSRL3">Teils / teils</label>
+
+                                    <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                        id="btnradioFeedbackSRL2" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradioFeedbackSRL2">Sehr</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center">
+                                Dieses Feedback war hilfreich:
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                        id="btnradioFeedbackSRL1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradioFeedbackSRL1">Ja</label>
+
+                                    <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                        id="btnradioFeedbackSRL2" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradioFeedbackSRL2">Nein</label>
+                                </div>
+                            </div>
+                            <!-- <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                                 <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
                                     id="btnradioFeedbackSRL1" autocomplete="off">
                                 <label class="btn btn-outline-primary" for="btnradioFeedbackSRL1">Das war
@@ -167,7 +197,7 @@
                                     id="btnradioFeedbackSRL2" autocomplete="off">
                                 <label class="btn btn-outline-primary" for="btnradioFeedbackSRL2">Das war nicht
                                     hilfreich</label>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -191,9 +221,9 @@
                                     </div>
                                     <div class="col">
 
-                                        <p>Aufmerksamkeit Feedback</p>
-                                        <p>Anstrengungsbereitschaft Feedback</p>
-                                        <p>Interesse am Lerngegenstand Feedback</p>
+                                        <p>Feedback zu Ihrer Aufmerksamkeit</p>
+                                        <p>Feedback zu Ihrer Anstrengungsbereitschaft</p>
+                                        <p>Feedback zu Ihrem Interesse am Lerngegenstand</p>
 
                                         <div class="btn-group" role="group"
                                             aria-label="Basic radio toggle button group">
@@ -233,13 +263,9 @@
                                 <div class="row">
                                     <h4>Leseanalyse</h4>
                                     <div class="col-6">
-                                        <div class="row">
-                                            <canvas id="canvas-bar-mdc" width="500" height="300"> </canvas>
-                                        </div>
-                                        <hr />
-                                        <div class="row">
+                                        <div class="row mt-3">
                                             <div class="col">
-                                                <h5>Wissens-Integration</h5>
+                                                <h5>Wissensintegration</h5>
                                                 <div class="progress">
                                                     <div class="progress-bar bg-warning" role="progressbar"
                                                         style="width: 25%" aria-valuenow="25" aria-valuemin="0"
@@ -247,7 +273,7 @@
                                                 </div>
                                             </div>
                                             <div class="col">
-                                                <h5>Umgang mit Meta-Informationen</h5>
+                                                <h5>Nutzung von Quellen</h5>
                                                 <div class="progress">
                                                     <div class="progress-bar bg-success" role="progressbar"
                                                         style="width: 55%" aria-valuenow="55" aria-valuemin="0"
@@ -255,6 +281,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row mt-5">
+                                            <h4>Zeit, die Sie in die Texte investiert haben</h4>
+                                            <canvas id="canvas-bar-mdc" width="500" height="300"> </canvas>
+                                        </div>
+                                        <hr />
                                     </div>
                                     <div class="col">
                                         <p>

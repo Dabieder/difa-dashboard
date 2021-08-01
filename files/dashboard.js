@@ -4,7 +4,7 @@ const toolBoxOptions = {
     left: 'right',
     top: 'center',
     feature: {
-        mark: { show: true },
+        mark: { show: false },
         dataView: { show: true, readOnly: false },
         magicType: { show: true, type: ['line', 'bar'] },
         restore: { show: true },
