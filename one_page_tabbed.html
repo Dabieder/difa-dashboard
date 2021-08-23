@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///D:/DIFA%20Dashboard/production/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Meta, title, CSS, favicons, etc. -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DIFA</title>
+
+    <!-- Bootstrap -->
+    <link href="./files/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9375rem;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .info-details {
+            margin-bottom: 1em;
+        }
+
+        .info-text {
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+        .red-circle:before {
+            content: ' \25CF';
+            font-size: 2em;
+            color: rgb(212, 23, 23);
+        }
+
+        .yellow-circle:before {
+            content: ' \25CF';
+            font-size: 2em;
+            color: rgb(207, 207, 36);
+        }
+
+        .green-circle:before {
+            content: ' \25CF';
+            font-size: 2em;
+            color: rgb(47, 124, 47);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row x_title">
+                    <div class="col-md-12">
+                        <h3>DIFA Dashboard<small></small></h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Instruktionen für das Dashboard</h2>
+                <hr />
+                <div class="card-text">
+                    <p>Auf dieser Seite erhalten Sie Feedback über Ihr beobachtbares Lernverhalten.</p>
+                    <p>An dieser Stelle werden einmal Hinweise stehen, wie Sie dieses Feedback interpretieren
+                        könnten.</p>
+                    <p>Wenn Sie die Seite neu laden, werden neue Werte generiert.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <ul class="nav nav-tabs mt-5" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab"
+                    data-bs-target="#tab-srl">Selbstreguliertes Lernen</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab-eng">Lernaktivität</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab-mdc">Akademisches Lesen</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="construct-tabs">
+            <div class="tab-pane fade active show" id="tab-srl" role="tabpanel">
+                <h4>Selbstreguliertes Lernen</h4>
+                <div class="row mt-5">
+                    <div class="col">
+                        <canvas id="canvas-srl" width="600" height="400"></canvas>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>Sie weisen eine geringe Ausprägung von <b>Elaboration</b> auf. Um Ihren
+                                Lernfortschritt
+                                noch
+                                effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Kehren Sie
+                                häufiger
+                                zu
+                                Lernmaterialien aus anderen Lerneinheiten zurück, um Ihr Wissen zu verknüpfen
+                                und
+                                mögliche
+                                Wissenslücken zu füllen.</li>
+                            <li>Sie weisen eine hohe Ausprägung von <b>Regulation</b> auf. Toll! Wir empfehlen
+                                Ihnen,
+                                diese
+                                Verhaltensweise beizubehalten. Zusätzliche Tipps für die Bearbeitung weiterer
+                                Lernmaterialien:
+                                Schauen Sie nach dem Ergebnis Ihres Selbsttest die Lernmaterialien wieder an,
+                                damit Sie
+                                Wissenslücken schließen.</li>
+                            <li>Sie weisen eine angemessene Ausprägung von <b>Überwachung</b> auf. Um Ihren
+                                Lernfortschritt
+                                noch effizienter zu gestalten empfehlen wir Ihnen daher folgende Tipps: Schauen
+                                Sie sich
+                                während
+                                des Selbsttests die Lernmaterialien häufiger an, um ihre Antworten zu
+                                überprüfen. </li>
+                            <li>Sie weisen eine angemessene Ausprägung von <b>Planung</b> auf. Um Ihren
+                                Lernfortschritt noch effizienter zu gestalten empfehlen wir Ihnen daher folgende
+                                Tipps: Lesen Sie
+                                sich sorgfältig die „Hinweise zur Bearbeitung der Lernmaterialien“ durch. </li>
+                        </ul>
+
+
+                        Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
+                        <br>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                    id="btnradioFeedbackSRL1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackSRL1">Gar nicht</label>
+
+
+                                <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                    id="btnradioFeedbackSRL3" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackSRL3">Teils /
+                                    teils</label>
+
+                                <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                    id="btnradioFeedbackSRL2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackSRL2">Sehr</label>
+                            </div>
+                        </div>
+
+                        <div class="mt-2 mb-2"></div>
+                        Dieses Feedback war hilfreich:
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradioFeedbackSRLYesNo"
+                                    id="btnradioFeedbackSRLYesNo1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackSRLYesNo1">Ja</label>
+
+                                <input type="radio" class="btn-check" name="btnradioFeedbackSRLYesNo"
+                                    id="btnradioFeedbackSRLYesNo2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackSRLYesNo2">Nein</label>
+                            </div>
+                        </div>
+                        <!-- <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                id="btnradioFeedbackSRL1" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradioFeedbackSRL1">Das war
+                                hilfreich</label>
+
+                            <input type="radio" class="btn-check" name="btnradioFeedbackSRL"
+                                id="btnradioFeedbackSRL2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradioFeedbackSRL2">Das war nicht
+                                hilfreich</label>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab-eng" role="tabpanel">
+                <h4>Lernaktivität</h4>
+                <div class="row mt-5">
+                    <div class="col">
+                        <div id="panel-eng" class="accordion-collapse collapse show" aria-labelledby="heading-eng">
+                            <div class="row">
+                                <div class="col">
+                                    <canvas id="canvas-eng" height="400" width="600">
+                                    </canvas>
+                                </div>
+                                <div class="col">
+
+                                    <p>Feedback zu Ihrer Aufmerksamkeit</p>
+                                    <p>Feedback zu Ihrer Anstrengungsbereitschaft</p>
+                                    <p>Feedback zu Ihrem Interesse am Lerngegenstand</p>
+
+
+
+
+                                    Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
+                                    <br>
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="btn-group" role="group"
+                                            aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="btnradioFeedbackENG"
+                                                id="btnradioFeedbackENG1" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradioFeedbackENG1">Gar
+                                                nicht</label>
+
+
+                                            <input type="radio" class="btn-check" name="btnradioFeedbackENG"
+                                                id="btnradioFeedbackENG3" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btnradioFeedbackENG3">Teils /
+                                                teils</label>
+
+                                            <input type="radio" class="btn-check" name="btnradioFeedbackENG"
+                                                id="btnradioFeedbackENG2" autocomplete="off">
+                                            <label class="btn btn-outline-primary"
+                                                for="btnradioFeedbackENG2">Sehr</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2 mb-2"></div>
+                                    Dieses Feedback war hilfreich:
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="btn-group" role="group"
+                                            aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="btnradioFeedbackENGYesNo"
+                                                id="btnradioFeedbackENGYesNo1" autocomplete="off">
+                                            <label class="btn btn-outline-primary"
+                                                for="btnradioFeedbackENGYesNo1">Ja</label>
+
+                                            <input type="radio" class="btn-check" name="btnradioFeedbackENGYesNo"
+                                                id="btnradioFeedbackENGYesNo2" autocomplete="off">
+                                            <label class="btn btn-outline-primary"
+                                                for="btnradioFeedbackENGYesNo2">Nein</label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab-mdc" role="tabpanel">
+                <div class="row">
+                    <h4>Akademisches Lesen</h4>
+                    <div class="col-6">
+                        <div class="row mt-3">
+                            <div class="col">
+                                <h5>Wissensintegration</h5>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h5>Nutzung von Quellen</h5>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 55%"
+                                        aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <h4>Zeit, die Sie in die Texte investiert haben</h4>
+                            <canvas id="canvas-bar-mdc" width="500" height="300"> </canvas>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="col">
+                        <p>
+                            Ihr Umgang mit den Texten in dieser Lerneinheit lässt darauf schließen,
+                            dass
+                            Sie ein
+                            insgesamt
+                            gutes
+                            Verständnis vom Thema entwickelt haben.
+                            <br><br>
+                            Sie haben: <br><br>
+                        </p>
+                        <ul>
+
+                            <li>sich genug Zeit für
+                                die Bearbeitung der Lernmaterialien genommen.</li>
+                            <li>sich in einem
+                                angemessenen Umfang mit den inhaltlichen Bezügen zwischen den
+                                Materialien
+                                auseinandergesetzt.</li>
+                            <li>sich in
+                                herausragendem
+                                Umfang mit Metainformationen zu den Lernmaterialien
+                                auseinandergesetzt.
+                            </li>
+                            <br>
+                            Zusätzliche Tipps:<br>
+                            Wir empfehlen Ihnen,
+                            diese Verhaltensweisen beizubehalten
+                        </ul>
+
+
+                        Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
+                        <br>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradioFeedbackMDC"
+                                    id="btnradioFeedbackMDC1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackMDC1">Gar nicht</label>
+
+
+                                <input type="radio" class="btn-check" name="btnradioFeedbackMDC"
+                                    id="btnradioFeedbackMDC3" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackMDC3">Teils /
+                                    teils</label>
+
+                                <input type="radio" class="btn-check" name="btnradioFeedbackMDC"
+                                    id="btnradioFeedbackMDC2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackMDC2">Sehr</label>
+                            </div>
+                        </div>
+
+                        <div class="mt-2 mb-2"></div>
+                        Dieses Feedback war hilfreich:
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradioFeedbackMDCYesNo"
+                                    id="btnradioFeedbackMDCYesNo1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackMDCYesNo1">Ja</label>
+
+                                <input type="radio" class="btn-check" name="btnradioFeedbackMDCYesNo"
+                                    id="btnradioFeedbackMDCYesNo2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradioFeedbackMDCYesNo2">Nein</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-header">Reflektionen zu Ihrem Lernverhalten</h2>
+                <p>
+                    Schreiben Sie bitte in dem unteren Textfeld auf, wie Sie ihr Lernen basierend auf dem
+                    oben
+                    genannten Feedback anpassen wollen.
+                </p>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2"></label>
+                </div>
+                <button type="button" class="mt-3 btn btn-primary" value="Abschicken">Speichern</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- footer content -->
+    <footer style="margin-left: 0px">
+        <div class="pull-right">
+            <a href="index.html">DiFA</a>
+        </div>
+        <div class="clearfix"></div>
+    </footer>
+    <!-- /footer content -->
+
+
+
+
+    <script src="./files/chart.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./files/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="./files/echarts.min.js"></script>
+    <script src="files/shared.js"></script>
+    <script src="./files/dashboard.js"></script>
+    <!-- <script src="./files/barChartLE.js"></script>
+  <script src="./files/radarChartLE.js"></script>
+  <script src="./files/polarChartMultipleLE.js"></script>
+  <script src="./files/radarJS.js"></script>
+  <script src="./files/BarReading_Donut.js.download"></script>
+  <script src="./files/barChartReading.js"></script> -->
+    <script>
+        redrawDashboard(0);
+    </script>
+
+
+</body>
+
+</html>
