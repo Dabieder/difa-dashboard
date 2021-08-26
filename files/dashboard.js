@@ -288,5 +288,20 @@ function drawTrend(from, to) {
     createSRLLineChart();
 }
 
+function submitGoals() {
+    console.log("Submitting Goals");
+
+    let textarea = document.getElementById("textarea-goals");
+    textarea.readOnly = !textarea.readOnly;
+
+    let submitButton = document.getElementById("submit-goals");
+    submitButton.innerHTML = textarea.readOnly ? "Bearbeiten" : "Speichern";
+
+    let description = textarea.readOnly ?
+        "Ihr Ziel für diesen Kurs ist:" :
+        "Schreiben Sie hier, aus welchen Gründen Sie diesen Kurs besuchen";
+    document.getElementById("description-goal-setting").innerHTML = description;
+}
+
 let NUM_ASSIGNMENTS = 4;
 // redrawDashboard(0);
