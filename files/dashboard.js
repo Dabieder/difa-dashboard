@@ -131,8 +131,8 @@ function createMDCBarChart(highlightIndex) {
     var myChart = echarts.init(chartDom);
     var option;
 
-    let min = -10;
-    let max = 10;
+    let min = 0;
+    let max = 30;
 
     constructs = ['Ihre Zeit']
     let numbers = getRandomNumbers(5, min, max);
@@ -167,7 +167,27 @@ function createMDCBarChart(highlightIndex) {
         series: [
             {
                 data: seriesData,
-                type: "bar"
+                type: "bar",
+                markLine: {
+                    label: {
+                        formatter: 'Mindest erwartete Lesezeit',
+                        position: "middle"
+                    },
+                    lineStyle: {
+                        color: '#333'
+                    },
+                    data: [{
+                        yAxis: 25
+                    }, {
+                        yAxis: 100
+                    }, {
+                        yAxis: 150
+                    }, {
+                        yAxis: 200
+                    }, {
+                        yAxis: 300
+                    }]
+                }
             },
         ]
     };
