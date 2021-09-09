@@ -1,0 +1,73 @@
+{
+    "assignment-1": {
+        "eng": {
+            "reportStem": [
+                "Lernen ist sehr sinnvoll"
+            ],
+            "report": [
+                "Studien haben gezeigt, dass Leute die mehr lernen viel klüger sind."
+            ],
+            "hintStem": [
+                "Sie können folgendes tun, um auch klüger zu werden:"
+            ],
+            "hint": [
+                "Lernen Sie mehr",
+                "Lesen Sie die Texte",
+                "Denken Sie mehr nach"
+            ],
+            "graphic": "example.com/some/image.png"
+        },
+        "srl": {
+            "reportStem": [
+                "Selbsteguliertes Lernen ist wichtig"
+            ],
+            "report": [
+                "Studien haben gezeigt, dass Leute die mehr lernen viel klüger sind."
+            ],
+            "hintStem": [
+                "Sie können folgendes tun, um Ihr selbstreguliertes Lernen zu verbessern:"
+            ],
+            "hint": [
+                "Planen Sie mehr",
+                "Reflektieren Sie mehr"
+            ],
+            "graphic": "example.com/some/other/image.png"
+        },
+        "ar": {
+            "reportStem": [
+                "Akademisches Lesen ist auch sehr wichtig"
+            ],
+            "report": [
+                "Studien haben gezeigt, dass Leute die mehr lernen viel klüger sind."
+            ],
+            "hintStem": [
+                "Sie können folgendes tun, um Ihr selbstreguliertes Lernen zu verbessern:"
+            ],
+            "hint": [
+                "Planen Sie mehr",
+                "Reflektieren Sie mehr"
+            ],
+            "graphic": "example.com/some/other/image.png"
+        }
+    },
+    "assignment-2": {
+        "eng": {},
+        "srl": {},
+        "ar": {}
+    },
+    "assignment-3": {
+        "eng": {},
+        "srl": {},
+        "ar": {}
+    },
+    "assignment-4": {
+        "eng": {},
+        "srl": {},
+        "ar": {}
+    },
+    "assignment-5": {
+        "eng": {},
+        "srl": {},
+        "ar": {}
+    }
+}

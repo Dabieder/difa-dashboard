@@ -1,0 +1,38 @@
+{
+    "eng": {
+        "value": 0
+    },
+    "srl": {
+        "value": 0
+    },
+    "ar": {
+        "integration": null,
+        "sourcing": 0.6,
+        "textDurations": [
+            {
+                "name": "Text 1",
+                "duration": 3,
+                "threshold": 5
+            },
+            {
+                "name": "Text 2",
+                "duration": 6,
+                "threshold": 3
+            },
+            {
+                "name": "Text 3",
+                "duration": 0,
+                "threshold": 1
+            }
+        ],
+        "report": [
+            "sich in einem ausreichenden Umfang mit Quelleninformationen in den Lernmaterialien auseinandergesetzt."
+        ],
+        "hints": [
+            "Versuchen Sie künftig auch Primärliteratur zu berücksichtigen. Originalquellen liefern Ihnen Informationen aus erster Hand und helfen Ihnen die Interpretation von Autor*innen, die eine Originalquelle zitieren, zu erkennen und zu verstehen."
+        ],
+        "praise": [
+            "Sie haben darauf geachtet, woher die Texte stammen, die Sie gelesen haben. Weiter so!"
+        ]
+    }
+}
