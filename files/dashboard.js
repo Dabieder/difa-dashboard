@@ -14,7 +14,6 @@ const toolBoxOptions = {
 
 const xAxisOptions = {
     type: 'category',
-    axisTick: { show: false },
     data: ['Einheit 1', 'Einheit 2', 'Einheit 3', 'Einheit 4', 'Einheit 5']
 };
 
@@ -50,6 +49,7 @@ function createLEBarChart(highlightIndex) {
     option = {
         color: colors,
         tooltip: {
+            show: true,
             trigger: 'axis',
             axisPointer: {
                 type: 'shadow'
@@ -89,7 +89,11 @@ function createSRLBarChart(highlightIndex) {
         series.push({
             name: constructs[i],
             data,
-            ...barOptions
+            ...barOptions,
+            tooltip: {
+                triger: "item",
+                show: true,
+            },
         });
     }
 
@@ -99,6 +103,10 @@ function createSRLBarChart(highlightIndex) {
             orient: "horizontal",
             data: constructs
         },
+        tooltip: {
+            triger: "item",
+            show: true,
+        },
         xAxis: [
             xAxisOptions
         ],
@@ -106,6 +114,65 @@ function createSRLBarChart(highlightIndex) {
             yAxisOptions
         ],
         series
+    };
+
+    option = {
+        title: {
+            text: 'Waterfall Chart',
+            subtext: 'Living Expenses in Shenzhen'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            },
+            formatter: function (params) {
+                var tar = params[1];
+                return tar.name + '<br/>' + tar.seriesName + ' : ' + tar.value;
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            splitLine: { show: false },
+            data: ['Total', 'Rent', 'Utilities', 'Transportation', 'Meals', 'Other']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name: 'Placeholder',
+                type: 'bar',
+                stack: 'Total',
+                itemStyle: {
+                    borderColor: 'transparent',
+                    color: 'transparent'
+                },
+                emphasis: {
+                    itemStyle: {
+                        borderColor: 'transparent',
+                        color: 'transparent'
+                    }
+                },
+                data: [0, 1700, 1400, 1200, 300, 0]
+            },
+            {
+                name: 'Life Cost',
+                type: 'bar',
+                stack: 'Total',
+                label: {
+                    show: true,
+                    position: 'inside'
+                },
+                data: [2900, 1200, 300, 200, 900, 300]
+            }
+        ]
     };
 
     option && myChart.setOption(option);
@@ -123,6 +190,11 @@ function createMDCBarChart(highlightIndex) {
 
     let constructs = ['Wissensintegration', 'Nutzung von Quellen', 'Mindestlesezeit erreicht'];
     let series = [];
+    let tooltips = ["So gut ist es Ihnen gelungen, Inhalte zu vergleichen und zu integrieren",
+        "So gut ist es Ihnen gelungen, Quelleninformationen zu nutzen",
+        "Anteil der Texte bei denen die Mindestlesezeit erreicht wurde"
+
+    ];
     for (let i = 0; i < constructs.length; i++) {
         let data = getRandomNumbers(NUM_ASSIGNMENTS, min, max);
 
@@ -131,15 +203,27 @@ function createMDCBarChart(highlightIndex) {
         series.push({
             name: constructs[i],
             data,
-            ...barOptions
+            ...barOptions,
+            tooltip: {
+                formatter: tooltips[i]
+            }
         });
     }
 
     option = {
+        title: {
+            text: "Akademisches Lesen"
+        },
         color: colors,
         legend: {
+            bottom: 10,
             orient: "horizontal",
             data: constructs
+        },
+        tooltip: {
+            show: true
+            // trigger: "item",
+            // formatter: '{a} <br/>{b} : {c} ({d}%)'
         },
         xAxis: [
             xAxisOptions
@@ -156,49 +240,76 @@ function createMDCBarChart(highlightIndex) {
 function createMDCDoughnutChart(canvasId, title) {
     let chartDom = document.getElementById(canvasId);
     let myChart = echarts.init(chartDom);
-    let option;
 
-    option = {
-        tooltip: {
-            trigger: 'item'
+    let numCharts = 5;
+    let percentage = 100.0 / numCharts;
+    let data = [];
+    let series = [];
+    let titles = [{
+        text: title,
+        left: 'center'
+    },];
+
+
+    let pieChartOptions = {
+        type: 'pie',
+        radius: ['20%', '30%'],
+        label: {
+            show: false,
+            position: 'center'
         },
-        legend: {
-            top: '5%',
-            left: 'center'
-        },
-        series: [
-            {
-                name: '访问来源',
-                type: 'pie',
-                radius: ['40%', '70%'],
-                avoidLabelOverlap: false,
-                label: {
-                    show: false,
-                    position: 'center'
-                },
-                emphasis: {
-                    label: {
-                        show: true,
-                        fontSize: '40',
-                        fontWeight: 'bold'
-                    }
-                },
-                labelLine: {
-                    show: false
-                },
-                data: [
-                    {value: 1048, name: '搜索引擎'},
-                    {value: 735, name: '直接访问'},
-                    {value: 580, name: '邮件营销'},
-                    {value: 484, name: '联盟广告'},
-                    {value: 300, name: '视频广告'}
-                ]
+        emphasis: {
+            label: {
+                show: true,
+                fontSize: '40',
+                fontWeight: 'bold'
             }
-        ]
+        },
+    }
+
+    let values = getRandomNumbers(NUM_ASSIGNMENTS, 0, 100);
+    for (let i = 0; i < numCharts; i++) {
+        data.push([
+            { value: values[i], name: '' },
+            { value: 100 - values[i], name: '' }
+        ]);
+
+        series.push({
+            ...pieChartOptions,
+            data: data[i],
+            center: [`${percentage * (i) + percentage / 2}%`, '30%']
+        })
+
+        titles.push({
+            subtext: 'Text' + (i + 1),
+            left: `${percentage * i + percentage / 2}%`,
+            top: "50%",
+            textAlign: 'center'
+        })
+
+        titles.push({
+            subtext: `${values[i]}:00`,
+            left: `${percentage * i + percentage / 2}%`,
+            top: "60%",
+            textAlign: 'center'
+        })
+    }
+
+
+
+
+    console.log(percentage);
+    console.log(series);
+
+
+
+    let option = {
+        title: titles,
+        series: series
     };
-    
+
     option && myChart.setOption(option);
-    
+
 }
 
 function redrawDashboard(highlightIndex) {
@@ -207,6 +318,8 @@ function redrawDashboard(highlightIndex) {
     // createBarChart("barChartLE");
     createLEBarChart(highlightIndex);
     createMDCBarChart(highlightIndex);
+
+    createMDCDoughnutChart("mdc-text-doughnuts", "Lesezeiten");
 }
 
 function submitGoals() {
