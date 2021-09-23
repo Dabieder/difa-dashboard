@@ -20,7 +20,7 @@ let labels = ['Einheit 1', 'Einheit 2', 'Einheit 3', "Einheit 4", "Einheit 5"];
 function getRandomNumbers(count, min, max) {
 
     let numbers = []
-    for (let i = 0; i <= count; i++) {
+    for (let i = 0; i < count; i++) {
         let rndInt = Math.floor(Math.random() * (max - min + 1) + min)
         numbers.push(rndInt);
     }
