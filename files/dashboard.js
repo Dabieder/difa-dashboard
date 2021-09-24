@@ -186,7 +186,7 @@ function createMDCDoughnutChart(canvasId, title) {
     let series = [];
     let titles = [];
 
-    let values = getRandomNumbers(1, 50, 120);
+    let values = getRandomNumbers(1, 30, 120);
     for (let i = 0; i < numCharts; i++) {
         data.push([
             { value: values[i], name: "" },
@@ -197,11 +197,14 @@ function createMDCDoughnutChart(canvasId, title) {
         let fontSize = 12;
         let subtextColor = "#000000"; 
         let radius = ["50%", "80%"];
+        let top = "30%";
+        
         if (values[i] >= 100) {
             title = "✓";
-            fontSize = 18;
+            fontSize = 22;
             radius= ["0%", "80%"];
             subtextColor = "#ffffff";
+            top = "25%";
         }
 
         let pieChartOptions = {
@@ -232,10 +235,11 @@ function createMDCDoughnutChart(canvasId, title) {
         titles.push({
             subtext: title,
             left: `45%`,
-            top: "30%",
+            top,
             textAlign: "center",
             subtextStyle: {
                 fontSize,
+                fontWeight: "bold",
                 color: subtextColor
             }
         });
