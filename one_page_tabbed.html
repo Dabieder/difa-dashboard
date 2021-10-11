@@ -60,7 +60,8 @@
       .text-rect::before {
         content: "";
         display: inline-block;
-        width: 15px;
+        width: 25px;
+        border-radius: 5px;
         height: 15px;
         margin-right: 5px;
       }
@@ -77,6 +78,26 @@
           background: #665191;
       }
 
+      .text-col1{
+          color: #003f5c;
+      }
+      .text-col2{
+        color: #2f9bac;
+      }
+      .text-col3{
+        color: #665191;
+      }
+
+      .text-bg1{
+          background-color: #003f5c;
+      }
+      .text-bg2{
+        background-color: #2f9bac;
+      }
+      .text-bg3{
+        background-color: #665191;
+      }
+
       ul {
         list-style-type: none;
     }
@@ -90,9 +111,6 @@
           <div class="row x_title">
             <div class="col-md-12">
               <h3>Feedback zur Lerneinheit 3</h3>
-            </div>
-            <div>
-              <span class="text-rect rect-col1">Text before and after</span>
             </div>
           </div>
         </div>
@@ -375,10 +393,6 @@
                   </ul>
                   
 
-              <p>Feedback zu Ihrer Aufmerksamkeit</p>
-              <p>Feedback zu Ihrer Anstrengungsbereitschaft</p>
-              <p>Feedback zu Ihrem Interesse am Lerngegenstand</p>
-
               Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
               <br />
               <div class="d-flex flex-row align-items-center">
@@ -566,15 +580,15 @@
               <ul>
                 <li>
                   Sich genug Zeit für die Bearbeitung der Lernmaterialien
-                  genommen.
+                  genommen. (<span class="text-rect rect-col3"></span><b class="text-col3">Mindestlesezeit</b>)
                 </li>
                 <li>
                   Sich in einem angemessenen Umfang mit den inhaltlichen Bezügen
-                  zwischen den Materialien auseinandergesetzt.
+                  zwischen den Materialien auseinandergesetzt. (<span class="text-rect rect-col1"></span> <b class="text-col1">Wissensintegration</b>)
                 </li>
-                <li>
+                <li >
                   Sich in einem ausreichenden Maße mit Quelleninformationen in
-                  den Lernmaterialien auseinandergesetzt.
+                  den Lernmaterialien auseinandergesetzt.  (<span class="text-rect rect-col2"></span> <b class="text-col2">Quellennutzung</b>)
                 </li>
               </ul>
               <br />
@@ -586,11 +600,11 @@
                   Sie haben Informationen, die für diese Lerneinheit wichtig
                   sind, zeitlich zusammenhängend betrachtet. Das ist eine gute
                   Voraussetzung, um diese Informationen miteinander zu
-                  verknüpfen und so das Thema gut zu verstehen. Weiter so
+                  verknüpfen und so das Thema gut zu verstehen. Weiter so.  (<span class="text-rect rect-col1"></span> <b class="text-col1">Wissensintegration</b>)
                 </li>
                 <li>
-                  Sie haben darauf geachtet, woher die Texte stammen, und haben
-                  darüber hinaus auch Primärliteratur geprüft. Weiter so!
+                   Sie haben darauf geachtet, woher die Texte stammen, und haben
+                  darüber hinaus auch Primärliteratur geprüft. Weiter so! (<span class="text-rect rect-col2"></span> <b class="text-col2">Quellennutzung</b>)
                 </li>
               </ul>
               <br />
