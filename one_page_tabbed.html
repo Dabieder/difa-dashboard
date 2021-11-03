@@ -1,520 +1,385 @@
 <!DOCTYPE html>
 <!-- saved from url=(0049)file:///D:/DIFA%20Dashboard/production/index.html -->
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <!-- Meta, title, CSS, favicons, etc. -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Meta, title, CSS, favicons, etc. -->
 
-    <title>DIFA</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap -->
-    <link href="./files/bootstrap.min.css" rel="stylesheet" />
+  <title>DIFA</title>
 
-    <style type="text/css">
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.9375rem;
-      }
+  <!-- Bootstrap -->
+  <link href="./files/bootstrap.min.css" rel="stylesheet" />
 
-      li {
-        margin-bottom: 0.5em;
-      }
-
-      .info-details {
-        margin-bottom: 1em;
-      }
-
-      .info-text {
-        margin-bottom: 1em;
-        margin-top: 1em;
-      }
-
-      .red-circle:before {
-        content: " \25CF";
-        font-size: 2em;
-        color: rgb(212, 23, 23);
-      }
-
-      .yellow-circle:before {
-        content: " \25CF";
-        font-size: 2em;
-        color: rgb(207, 207, 36);
-      }
-
-      .green-circle:before {
-        content: " \25CF";
-        font-size: 2em;
-        color: rgb(47, 124, 47);
-      }
-
-      .rectangle {
-        width: 200px;
-        height: 100px;
-        background: rgb(68, 68, 126);
-      }
-
-      .text-rect::before {
-        content: "";
-        display: inline-block;
-        width: 25px;
-        border-radius: 5px;
-        height: 15px;
-        margin-right: 5px;
-      }
-
-      .rect-col1::before {
-          background: #003f5c;
-      }
-
-      .rect-col2:before {
-          background: #2f9bac;
-      }
-
-      .rect-col3:before {
-          background: #665191;
-      }
-
-      .text-col1{
-          color: #003f5c;
-      }
-      .text-col2{
-        color: #2f9bac;
-      }
-      .text-col3{
-        color: #665191;
-      }
-
-      .text-bg1{
-          background-color: #003f5c;
-      }
-      .text-bg2{
-        background-color: #2f9bac;
-      }
-      .text-bg3{
-        background-color: #665191;
-      }
-
-      ul {
-        list-style-type: none;
+  <style type="text/css">
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9375rem;
     }
-    </style>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="row x_title">
-            <div class="col-md-12">
-              <h3>Feedback zur Lerneinheit 3</h3>
-            </div>
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    .info-details {
+      margin-bottom: 1em;
+    }
+
+    .info-text {
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+    .red-circle:before {
+      content: " \25CF";
+      font-size: 2em;
+      color: rgb(212, 23, 23);
+    }
+
+    .yellow-circle:before {
+      content: " \25CF";
+      font-size: 2em;
+      color: rgb(207, 207, 36);
+    }
+
+    .green-circle:before {
+      content: " \25CF";
+      font-size: 2em;
+      color: rgb(47, 124, 47);
+    }
+
+    .rectangle {
+      width: 200px;
+      height: 100px;
+      background: rgb(68, 68, 126);
+    }
+
+    .text-rect::before {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      border-radius: 5px;
+      height: 15px;
+      margin-right: 5px;
+    }
+
+    .rect-col1::before {
+      background: #003f5c;
+    }
+
+    .rect-col2:before {
+      background: #2f9bac;
+    }
+
+    .rect-col3:before {
+      background: #665191;
+    }
+
+    .text-col1 {
+      color: #003f5c;
+    }
+
+    .text-col2 {
+      color: #2f9bac;
+    }
+
+    .text-col3 {
+      color: #665191;
+    }
+
+    .text-bg1 {
+      background-color: #003f5c;
+    }
+
+    .text-bg2 {
+      background-color: #2f9bac;
+    }
+
+    .text-bg3 {
+      background-color: #665191;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="row x_title">
+          <div class="col-md-12">
+            <h3>Feedback zur Lerneinheit 3</h3>
           </div>
         </div>
       </div>
+    </div>
 
-      <ul class="nav nav-tabs mt-5" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link active"
-            aria-current="page"
-            href="#"
-            data-bs-toggle="tab"
-            data-bs-target="#tab-srl"
-            >Selbstreguliertes Lernen</a
-          >
-        </li>
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link"
-            href="#"
-            data-bs-toggle="tab"
-            data-bs-target="#tab-eng"
-            >Lernaktivität</a
-          >
-        </li>
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link"
-            href="#"
-            data-bs-toggle="tab"
-            data-bs-target="#tab-mdc"
-            >Akademisches Lesen</a
-          >
-        </li>
-      </ul>
+    <ul class="nav nav-tabs mt-5" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab"
+          data-bs-target="#tab-srl">Selbstreguliertes Lernen</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab-eng">Lernaktivität</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab-mdc">Akademisches Lesen</a>
+      </li>
+    </ul>
 
-      <div class="tab-content" id="construct-tabs">
-        <div class="tab-pane fade active show" id="tab-srl" role="tabpanel">
-          <div class="row mt-3">
-            <h4 class="mt-2">Selbstreguliertes Lernen</h4>
-            <div class="col">
-              <div id="canvas-srl" style="width: 600px; height: 300px"></div>
-            </div>
-            <div class="col">
-              <ul>
-                <li>
-                    Sie weisen eine geringe Ausprägung von
-                  <b>Elaboration</b> auf. Um Ihren Lernfortschritt noch
-                  effizienter zu gestalten empfehlen wir Ihnen daher folgende
-                  Tipps: Kehren Sie häufiger zu Lernmaterialien aus anderen
-                  Lerneinheiten zurück, um Ihr Wissen zu verknüpfen und mögliche
-                  Wissenslücken zu füllen.
-                </li>
-                <li>
-                  Sie weisen eine hohe Ausprägung von <b>Regulation</b> auf.
-                  Toll! Wir empfehlen Ihnen, diese Verhaltensweise
-                  beizubehalten. Zusätzliche Tipps für die Bearbeitung weiterer
-                  Lernmaterialien: Schauen Sie nach dem Ergebnis Ihres
-                  Selbsttest die Lernmaterialien wieder an, damit Sie
-                  Wissenslücken schließen.
-                </li>
-                <li>
-                  Sie weisen eine angemessene Ausprägung von
-                  <b>Überwachung</b> auf. Um Ihren Lernfortschritt noch
-                  effizienter zu gestalten empfehlen wir Ihnen daher folgende
-                  Tipps: Schauen Sie sich während des Selbsttests die
-                  Lernmaterialien häufiger an, um ihre Antworten zu überprüfen.
-                </li>
-                <li>
-                  Sie weisen eine angemessene Ausprägung von <b>Planung</b> auf.
-                  Um Ihren Lernfortschritt noch effizienter zu gestalten
-                  empfehlen wir Ihnen daher folgende Tipps: Lesen Sie sich
-                  sorgfältig die „Hinweise zur Bearbeitung der Lernmaterialien“
-                  durch.
-                </li>
-              </ul>
-
-              <h5 class="mt-5 mb-3">
-                Bitte geben Sie uns Ihre Einschätzung dem obigen Feedback
-              </h5>
-              Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
-              <br />
-              <div class="d-flex flex-row align-items-center">
-                <div
-                  class="btn-group"
-                  role="group"
-                  aria-label="Basic radio toggle button group"
-                >
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackSRL"
-                    id="btnradioFeedbackSRL1"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackSRL1"
-                    >Gar nicht</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackSRL"
-                    id="btnradioFeedbackSRL3"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackSRL3"
-                    >Teils / teils</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackSRL"
-                    id="btnradioFeedbackSRL2"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackSRL2"
-                    >Sehr</label
-                  >
-                </div>
-              </div>
-
-              <div class="mt-2 mb-2"></div>
-              Dieses Feedback war hilfreich:
-              <div class="d-flex flex-row align-items-center">
-                <div
-                  class="btn-group"
-                  role="group"
-                  aria-label="Basic radio toggle button group"
-                >
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackSRLYesNo"
-                    id="btnradioFeedbackSRLYesNo1"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackSRLYesNo1"
-                    >Ja</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackSRLYesNo"
-                    id="btnradioFeedbackSRLYesNo2"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackSRLYesNo2"
-                    >Nein</label
-                  >
-                </div>
-              </div>
-            </div>
+    <div class="tab-content" id="construct-tabs">
+      <div class="tab-pane fade active show" id="tab-srl" role="tabpanel">
+        <div class="row mt-3">
+          <h4 class="mt-2">Selbstreguliertes Lernen</h4>
+          <div class="col">
+            <div id="canvas-srl" style="width: 600px; height: 300px"></div>
           </div>
+          <div class="col">
+            <ul>
+              <li>
+                Sie weisen eine geringe Ausprägung von
+                <b>Elaboration</b> auf. Um Ihren Lernfortschritt noch
+                effizienter zu gestalten empfehlen wir Ihnen daher folgende
+                Tipps: Kehren Sie häufiger zu Lernmaterialien aus anderen
+                Lerneinheiten zurück, um Ihr Wissen zu verknüpfen und mögliche
+                Wissenslücken zu füllen.
+              </li>
+              <li>
+                Sie weisen eine hohe Ausprägung von <b>Regulation</b> auf.
+                Toll! Wir empfehlen Ihnen, diese Verhaltensweise
+                beizubehalten. Zusätzliche Tipps für die Bearbeitung weiterer
+                Lernmaterialien: Schauen Sie nach dem Ergebnis Ihres
+                Selbsttest die Lernmaterialien wieder an, damit Sie
+                Wissenslücken schließen.
+              </li>
+              <li>
+                Sie weisen eine angemessene Ausprägung von
+                <b>Überwachung</b> auf. Um Ihren Lernfortschritt noch
+                effizienter zu gestalten empfehlen wir Ihnen daher folgende
+                Tipps: Schauen Sie sich während des Selbsttests die
+                Lernmaterialien häufiger an, um ihre Antworten zu überprüfen.
+              </li>
+              <li>
+                Sie weisen eine angemessene Ausprägung von <b>Planung</b> auf.
+                Um Ihren Lernfortschritt noch effizienter zu gestalten
+                empfehlen wir Ihnen daher folgende Tipps: Lesen Sie sich
+                sorgfältig die „Hinweise zur Bearbeitung der Lernmaterialien“
+                durch.
+              </li>
+            </ul>
 
-          <div class="card-body">
-            <h5 class="card-header">
-              Ihre Pläne zur Verbesserung des selbstregulierten Lernens
+            <h5 class="mt-5 mb-3">
+              Bitte geben Sie uns Ihre Einschätzung dem obigen Feedback
             </h5>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="textarea-plans-srl"
-                style="height: 100px"
-              ></textarea>
-              <label for="textarea-plans-srl"
-                >Schreiben Sie hier bitte auf, welche Pläne Sie für das
-                Verbessern Ihres akademischen Lesens haben.</label
-              >
+            Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
+            <br />
+            <div class="d-flex flex-row align-items-center">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradioFeedbackSRL" id="btnradioFeedbackSRL1"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackSRL1">Gar nicht</label>
+
+                <input type="radio" class="btn-check" name="btnradioFeedbackSRL" id="btnradioFeedbackSRL3"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackSRL3">Teils / teils</label>
+
+                <input type="radio" class="btn-check" name="btnradioFeedbackSRL" id="btnradioFeedbackSRL2"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackSRL2">Sehr</label>
+              </div>
             </div>
-            <button
-              type="button"
-              class="mt-3 btn btn-primary"
-              value="Abschicken"
-            >
-              Speichern
-            </button>
+
+            <div class="mt-2 mb-2"></div>
+            Dieses Feedback war hilfreich:
+            <div class="d-flex flex-row align-items-center">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradioFeedbackSRLYesNo" id="btnradioFeedbackSRLYesNo1"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackSRLYesNo1">Ja</label>
+
+                <input type="radio" class="btn-check" name="btnradioFeedbackSRLYesNo" id="btnradioFeedbackSRLYesNo2"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackSRLYesNo2">Nein</label>
+              </div>
+            </div>
           </div>
         </div>
 
-
-
-        <div class="tab-pane fade" id="tab-eng" role="tabpanel">
-          <div class="row mt-3">
-            <h4>Lernaktivität</h4>
-            <div class="col">
-                <div class="row">
-                    <div id="canvas-eng" style="width: 600px; height: 300px"></div>
-                </div>              
-<div class="row">
-    <div>
-        <h5>Anstrengungsbereitschaft</h5>
-        <p>
-            Die Dimension "Anstrengungsbereitschaft" ist bei Ihnen <span class="text-success">hoch</span> ausgeprägt.
-        </p>
-        <p>
-          Die Dimension Anstrengungsbereitschaft bündelt das beobachtbare Handeln von Lernenden im Kontext eines Aktivitätsverlaufs und bildet hieraus einen Wert, der Anstiege und Gefälle einbezieht.
-        </p>
-    </div>
-    <div>
-        <h5>Aufmerksamkeit</h5>
-        <p>
-            Die Dimension "Aufmerksamkeit" ist bei Ihnen <span class="text-warning">angemessen</span> ausgeprägt.
-        </p>
-        <p>
-          Die Dimension Aufmerksamkeit spiegelt die investierten Bewusstseinsressourcen dem Lerngegenstand gegenüber wieder, indem ein Wert gebildet wird, der sich aus vermeintlich lernrelevanten und –irrelevanten Aktivitäten ableitet. 
-        </p>
-    </div>
-    <div>
-        <h5>Interesse am Lerngegenstand</h5>
-        <p>
-            Die Dimension "Interesse am Lerngegenstand" ist bei Ihnen <span class="text-danger">gering</span> ausgeprägt.
-        </p>
-        <p>
-          Die Dimension Interesse am Lerngegenstand bündelt aus Handeln ableitbare Emotionen und bildet einen Wert, der die Anteilnahme am angebotenen Lernmaterial widerspiegelt.
-        </p>
-    </div>
-</div>
-            </div>
-            <div class="col mt-3">
-
-                
-                  <p>
-                    <b>Sie haben:</b>
-                  </p>
-                  <ul>
-                    <li>
-                      Sich genug Zeit für die Bearbeitung der Lernmaterialien
-                      genommen.(<span class="text-rect rect-col3"></span><b class="text-col3">Aufmerksamkeit</b>)
-                    </li>
-                    <li>
-                        Sich in einem angemessenen Umfang mit den inhaltlichen Bezügen
-                      zwischen den Materialien auseinandergesetzt.(<span class="text-rect rect-col2"></span><b class="text-col2">Anstrengungsbereitschaft</b>)
-                    </li>
-                    <li>
-                        Sich in einem ausreichenden Maße mit Quelleninformationen in
-                      den Lernmaterialien auseinandergesetzt.(<span class="text-rect rect-col3"></span><b class="text-col3">Interesse</b>)
-                    </li>
-                  </ul>
-                  <br />
-                  <p>
-                    <b> Behalten Sie das bei:</b>
-                  </p>
-                  <ul>
-                    <li>
-                      Sie haben Informationen, die für diese Lerneinheit wichtig
-                      sind, zeitlich zusammenhängend betrachtet. Das ist eine gute
-                      Voraussetzung, um diese Informationen miteinander zu
-                      verknüpfen und so das Thema gut zu verstehen. Weiter so! (<span class="text-rect rect-col3"></span><b class="text-col3">Interesse</b>)
-                    </li>
-                    <li>
-                      Sie haben darauf geachtet, woher die Texte stammen, und haben
-                      darüber hinaus auch Primärliteratur geprüft. Weiter so! (<span class="text-rect rect-col1"></span><b class="text-col1">Aufmerksamkeit</b>)
-                    </li> 
-                  </ul>
-                  <br />
-                  <p>
-                    <b> Zusätzliche Tipps:</b>
-                  </p>
-                  <ul>
-                    <li>
-                      Versuchen Sie künftig, relevante Informationen in den
-                      Lernmaterialien nachzulesen. (<span class="text-rect rect-col1"></span><b class="text-col1">Aufmerksamkeit</b>)
-                    </li>
-                    <li>
-                      Versuchen Sie künftig auch Primärliteratur zu berücksichtigen.
-                      Originalquellen liefern Ihnen Informationen aus erster Hand
-                      und helfen Ihnen die Interpretation von Autor*innen, die eine
-                      Originalquelle zitieren, zu erkennen und zu verstehen (<span class="text-rect rect-col1"></span><b class="text-col1">Aufmerksamkeit</b>)
-                    </li>
-                  </ul>
-                  
-
-              Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
-              <br />
-              <div class="d-flex flex-row align-items-center">
-                <div
-                  class="btn-group"
-                  role="group"
-                  aria-label="Basic radio toggle button group"
-                >
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackENG"
-                    id="btnradioFeedbackENG1"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackENG1"
-                    >Gar nicht</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackENG"
-                    id="btnradioFeedbackENG3"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackENG3"
-                    >Teils / teils</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackENG"
-                    id="btnradioFeedbackENG2"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackENG2"
-                    >Sehr</label
-                  >
-                </div>
-              </div>
-
-              <div class="mt-2 mb-2"></div>
-              Dieses Feedback war hilfreich:
-              <div class="d-flex flex-row align-items-center">
-                <div
-                  class="btn-group"
-                  role="group"
-                  aria-label="Basic radio toggle button group"
-                >
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackENGYesNo"
-                    id="btnradioFeedbackENGYesNo1"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackENGYesNo1"
-                    >Ja</label
-                  >
-
-                  <input
-                    type="radio"
-                    class="btn-check"
-                    name="btnradioFeedbackENGYesNo"
-                    id="btnradioFeedbackENGYesNo2"
-                    autocomplete="off"
-                  />
-                  <label
-                    class="btn btn-outline-primary"
-                    for="btnradioFeedbackENGYesNo2"
-                    >Nein</label
-                  >
-                </div>
-              </div>
-            </div>
+        <div class="card-body">
+          <h5 class="card-header">
+            Ihre Pläne zur Verbesserung des selbstregulierten Lernens
+          </h5>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="textarea-plans-srl"
+              style="height: 100px"></textarea>
+            <label for="textarea-plans-srl">Schreiben Sie hier bitte auf, welche Pläne Sie für das
+              Verbessern Ihres akademischen Lesens haben.</label>
           </div>
-
-          <div class="card-body">
-            <h5 class="card-header">
-              Ihre Pläne zur Verbesserung des Lernengagements
-            </h5>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="textarea-plans-eng"
-                style="height: 100px"
-              ></textarea>
-              <label for="textarea-plans-eng"
-                >Schreiben Sie hier bitte auf, welche Pläne Sie für das
-                Verbessern Ihres akademischen Lesens haben.</label
-              >
-            </div>
-            <button
-              type="button"
-              class="mt-3 btn btn-primary"
-              value="Abschicken"
-            >
-              Speichern
-            </button>
-          </div>
+          <button type="button" class="mt-3 btn btn-primary" value="Abschicken">
+            Speichern
+          </button>
         </div>
-        <div class="tab-pane fade" id="tab-mdc" role="tabpanel">
-          <h4 class="mt-3">Akademisches Lesen</h4>
+      </div>
+
+
+
+      <div class="tab-pane fade" id="tab-eng" role="tabpanel">
+        <div class="row mt-3">
+          <h4>Lernaktivität</h4>
           <div class="row">
-            <!-- <h4>Akademisches Lesen</h4> -->
             <div class="col">
-              <!-- <div class="row mt-3">
+              <div id="canvas-eng" style="width: 600px; height: 300px"></div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <div>
+                  <b>Anstrengungsbereitschaft</b>
+                  <p>
+                    Die Dimension Anstrengungsbereitschaft bündelt das beobachtbare Handeln von Lernenden im Kontext eines
+                    Aktivitätsverlaufs und bildet hieraus einen Wert, der Anstiege und Gefälle einbezieht.
+                  </p>
+                </div>
+                <div>
+                  <b>Aufmerksamkeit</b>
+                  <p>
+                    Die Dimension Aufmerksamkeit spiegelt die investierten Bewusstseinsressourcen dem Lerngegenstand
+                    gegenüber wieder, indem ein Wert gebildet wird, der sich aus vermeintlich lernrelevanten und
+                    –irrelevanten Aktivitäten ableitet.
+                  </p>
+                </div>
+                <div>
+                  <b>Interesse am Lerngegenstand</b>
+                  <p>
+                    Die Dimension Interesse am Lerngegenstand bündelt aus Handeln ableitbare Emotionen und bildet einen
+                    Wert, der die Anteilnahme am angebotenen Lernmaterial widerspiegelt.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col mt-3">
+
+
+            <p>
+              <b>Sie haben:</b>
+            </p>
+            <ul>
+              <li>
+                Sich genug Zeit für die Bearbeitung der Lernmaterialien
+                genommen.(<span class="text-rect rect-col3"></span><b class="text-col3">Aufmerksamkeit</b>)
+              </li>
+              <li>
+                Sich in einem angemessenen Umfang mit den inhaltlichen Bezügen
+                zwischen den Materialien auseinandergesetzt.(<span class="text-rect rect-col2"></span><b
+                  class="text-col2">Anstrengungsbereitschaft</b>)
+              </li>
+              <li>
+                Sich in einem ausreichenden Maße mit Quelleninformationen in
+                den Lernmaterialien auseinandergesetzt.(<span class="text-rect rect-col3"></span><b
+                  class="text-col3">Interesse</b>)
+              </li>
+            </ul>
+            <br />
+            <p>
+              <b> Behalten Sie das bei:</b>
+            </p>
+            <ul>
+              <li>
+                Sie haben Informationen, die für diese Lerneinheit wichtig
+                sind, zeitlich zusammenhängend betrachtet. Das ist eine gute
+                Voraussetzung, um diese Informationen miteinander zu
+                verknüpfen und so das Thema gut zu verstehen. Weiter so! (<span class="text-rect rect-col3"></span><b
+                  class="text-col3">Interesse</b>)
+              </li>
+              <li>
+                Sie haben darauf geachtet, woher die Texte stammen, und haben
+                darüber hinaus auch Primärliteratur geprüft. Weiter so! (<span class="text-rect rect-col1"></span><b
+                  class="text-col1">Aufmerksamkeit</b>)
+              </li>
+            </ul>
+            <br />
+            <p>
+              <b> Zusätzliche Tipps:</b>
+            </p>
+            <ul>
+              <li>
+                Versuchen Sie künftig, relevante Informationen in den
+                Lernmaterialien nachzulesen. (<span class="text-rect rect-col1"></span><b
+                  class="text-col1">Aufmerksamkeit</b>)
+              </li>
+              <li>
+                Versuchen Sie künftig auch Primärliteratur zu berücksichtigen.
+                Originalquellen liefern Ihnen Informationen aus erster Hand
+                und helfen Ihnen die Interpretation von Autor*innen, die eine
+                Originalquelle zitieren, zu erkennen und zu verstehen (<span class="text-rect rect-col1"></span><b
+                  class="text-col1">Aufmerksamkeit</b>)
+              </li>
+            </ul>
+
+
+            Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
+            <br />
+            <div class="d-flex flex-row align-items-center">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradioFeedbackENG" id="btnradioFeedbackENG1"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackENG1">Gar nicht</label>
+
+                <input type="radio" class="btn-check" name="btnradioFeedbackENG" id="btnradioFeedbackENG3"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackENG3">Teils / teils</label>
+
+                <input type="radio" class="btn-check" name="btnradioFeedbackENG" id="btnradioFeedbackENG2"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackENG2">Sehr</label>
+              </div>
+            </div>
+
+            <div class="mt-2 mb-2"></div>
+            Dieses Feedback war hilfreich:
+            <div class="d-flex flex-row align-items-center">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradioFeedbackENGYesNo" id="btnradioFeedbackENGYesNo1"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackENGYesNo1">Ja</label>
+
+                <input type="radio" class="btn-check" name="btnradioFeedbackENGYesNo" id="btnradioFeedbackENGYesNo2"
+                  autocomplete="off" />
+                <label class="btn btn-outline-primary" for="btnradioFeedbackENGYesNo2">Nein</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-header">
+            Ihre Pläne zur Verbesserung des Lernengagements
+          </h5>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="textarea-plans-eng"
+              style="height: 100px"></textarea>
+            <label for="textarea-plans-eng">Schreiben Sie hier bitte auf, welche Pläne Sie für das
+              Verbessern Ihres akademischen Lesens haben.</label>
+          </div>
+          <button type="button" class="mt-3 btn btn-primary" value="Abschicken">
+            Speichern
+          </button>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab-mdc" role="tabpanel">
+        <h4 class="mt-3">Akademisches Lesen</h4>
+        <div class="row">
+          <!-- <h4>Akademisches Lesen</h4> -->
+          <div class="col">
+            <!-- <div class="row mt-3">
                             <div class="col">
                                 <canvas id="mdc-text-doughnut-1" width="150" height="200"> </canvas>
                                 <h5>Text 1</h5>
@@ -528,246 +393,176 @@
                                 <h5>Text 3</h5>
                             </div>
                         </div> -->
-              <div class="row">
-                <div class="col">
-                  <!-- <canvas id="canvas-bar-mdc" width="600" height="300"> </canvas> -->
-                  <div
-                    id="canvas-bar-mdc"
-                    style="width: 600px; height: 300px"
-                  ></div>
-                </div>
+            <div class="row">
+              <div class="col">
+                <!-- <canvas id="canvas-bar-mdc" width="600" height="300"> </canvas> -->
+                <div id="canvas-bar-mdc" style="width: 600px; height: 300px"></div>
               </div>
-              <div class="row">
-                <h4>Lesezeiten</h4>
-                <div class="col">
-                  <div
-                    id="mdc-text-doughnut-1"
-                    style="width: 100px; height: 100px"
-                  ></div>
-                  Motive zur Nutzung
-                </div>
-                <div class="col">
-                  <div
-                    id="mdc-text-doughnut-2"
-                    style="width: 100px; height: 100px"
-                  ></div>
-                  Didaktische Ansätze
-                </div>
-                <div class="col">
-                  <div
-                    id="mdc-text-doughnut-3"
-                    style="width: 100px; height: 100px"
-                  ></div>
-                  Lerntheoretische Ansätze
-                </div>
-                <div class="col">
-                  <div
-                    id="mdc-text-doughnut-4"
-                    style="width: 100px; height: 100px"
-                  ></div>
-                  Wirksamkeit des Einsatzes von Tablets
-                </div>
-                <div class="col">
-                  <div
-                    id="mdc-text-doughnut-5"
-                    style="width: 100px; height: 100px"
-                  ></div>
-                  Internet als Resource
-                </div>
+            </div>
+            <div class="row">
+              <h4>Lesezeiten</h4>
+              <div class="col">
+                <div id="mdc-text-doughnut-1" style="width: 100px; height: 100px"></div>
+                Motive zur Nutzung
               </div>
-              <hr />
+              <div class="col">
+                <div id="mdc-text-doughnut-2" style="width: 100px; height: 100px"></div>
+                Didaktische Ansätze
+              </div>
+              <div class="col">
+                <div id="mdc-text-doughnut-3" style="width: 100px; height: 100px"></div>
+                Lerntheoretische Ansätze
+              </div>
+              <div class="col">
+                <div id="mdc-text-doughnut-4" style="width: 100px; height: 100px"></div>
+                Wirksamkeit des Einsatzes von Tablets
+              </div>
+              <div class="col">
+                <div id="mdc-text-doughnut-5" style="width: 100px; height: 100px"></div>
+                Internet als Resource
+              </div>
             </div>
-            <div class="col mt-3">
-              <p>
-                <b>Sie haben:</b>
-              </p>
-              <ul>
-                <li>
-                  Sich genug Zeit für die Bearbeitung der Lernmaterialien
-                  genommen. (<span class="text-rect rect-col3"></span><b class="text-col3">Mindestlesezeit</b>)
-                </li>
-                <li>
-                  Sich in einem angemessenen Umfang mit den inhaltlichen Bezügen
-                  zwischen den Materialien auseinandergesetzt. (<span class="text-rect rect-col1"></span> <b class="text-col1">Wissensintegration</b>)
-                </li>
-                <li >
-                  Sich in einem ausreichenden Maße mit Quelleninformationen in
-                  den Lernmaterialien auseinandergesetzt.  (<span class="text-rect rect-col2"></span> <b class="text-col2">Quellennutzung</b>)
-                </li>
-              </ul>
-              <br />
-              <p>
-                <b> Behalten Sie das bei:</b>
-              </p>
-              <ul>
-                <li>
-                  Sie haben Informationen, die für diese Lerneinheit wichtig
-                  sind, zeitlich zusammenhängend betrachtet. Das ist eine gute
-                  Voraussetzung, um diese Informationen miteinander zu
-                  verknüpfen und so das Thema gut zu verstehen. Weiter so.  (<span class="text-rect rect-col1"></span> <b class="text-col1">Wissensintegration</b>)
-                </li>
-                <li>
-                   Sie haben darauf geachtet, woher die Texte stammen, und haben
-                  darüber hinaus auch Primärliteratur geprüft. Weiter so! (<span class="text-rect rect-col2"></span> <b class="text-col2">Quellennutzung</b>)
-                </li>
-              </ul>
-              <br />
-              <p>
-                <b> Zusätzliche Tipps:</b>
-              </p>
-              <ul>
-                <li>
-                  Versuchen Sie künftig, relevante Informationen in den
-                  Lernmaterialien nachzulesen.
-                </li>
-                <li>
-                  Versuchen Sie künftig auch Primärliteratur zu berücksichtigen.
-                  Originalquellen liefern Ihnen Informationen aus erster Hand
-                  und helfen Ihnen die Interpretation von Autor*innen, die eine
-                  Originalquelle zitieren, zu erkennen und zu verstehen
-                </li>
-                <li>
-                  Planen Sie beim nächsten Mal bewusst Zeit für das Lesen der
-                  Fachtexte ein. Überprüfen Sie sich auch selbst darauf, ob Sie
-                  die Texte gründlich gelesen oder eher überfolgen haben.
-                </li>
-              </ul>
-            </div>
+            <hr />
           </div>
-
-          <br />
-          Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
-          <br />
-          <div class="d-flex flex-row align-items-center">
-            <div
-              class="btn-group"
-              role="group"
-              aria-label="Basic radio toggle button group"
-            >
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradioFeedbackMDC"
-                id="btnradioFeedbackMDC1"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-primary" for="btnradioFeedbackMDC1"
-                >Gar nicht</label
-              >
-
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradioFeedbackMDC"
-                id="btnradioFeedbackMDC3"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-primary" for="btnradioFeedbackMDC3"
-                >Teils / teils</label
-              >
-
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradioFeedbackMDC"
-                id="btnradioFeedbackMDC2"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-primary" for="btnradioFeedbackMDC2"
-                >Sehr</label
-              >
-            </div>
+          <div class="col mt-3">
+            <p>
+              <b>Sie haben:</b>
+            </p>
+            <ul>
+              <li>
+                Sich genug Zeit für die Bearbeitung der Lernmaterialien
+                genommen. (<span class="text-rect rect-col3"></span><b class="text-col3">Mindestlesezeit</b>)
+              </li>
+              <li>
+                Sich in einem angemessenen Umfang mit den inhaltlichen Bezügen
+                zwischen den Materialien auseinandergesetzt. (<span class="text-rect rect-col1"></span> <b
+                  class="text-col1">Wissensintegration</b>)
+              </li>
+              <li>
+                Sich in einem ausreichenden Maße mit Quelleninformationen in
+                den Lernmaterialien auseinandergesetzt. (<span class="text-rect rect-col2"></span> <b
+                  class="text-col2">Quellennutzung</b>)
+              </li>
+            </ul>
+            <br />
+            <p>
+              <b> Behalten Sie das bei:</b>
+            </p>
+            <ul>
+              <li>
+                Sie haben Informationen, die für diese Lerneinheit wichtig
+                sind, zeitlich zusammenhängend betrachtet. Das ist eine gute
+                Voraussetzung, um diese Informationen miteinander zu
+                verknüpfen und so das Thema gut zu verstehen. Weiter so. (<span class="text-rect rect-col1"></span> <b
+                  class="text-col1">Wissensintegration</b>)
+              </li>
+              <li>
+                Sie haben darauf geachtet, woher die Texte stammen, und haben
+                darüber hinaus auch Primärliteratur geprüft. Weiter so! (<span class="text-rect rect-col2"></span> <b
+                  class="text-col2">Quellennutzung</b>)
+              </li>
+            </ul>
+            <br />
+            <p>
+              <b> Zusätzliche Tipps:</b>
+            </p>
+            <ul>
+              <li>
+                Versuchen Sie künftig, relevante Informationen in den
+                Lernmaterialien nachzulesen.
+              </li>
+              <li>
+                Versuchen Sie künftig auch Primärliteratur zu berücksichtigen.
+                Originalquellen liefern Ihnen Informationen aus erster Hand
+                und helfen Ihnen die Interpretation von Autor*innen, die eine
+                Originalquelle zitieren, zu erkennen und zu verstehen
+              </li>
+              <li>
+                Planen Sie beim nächsten Mal bewusst Zeit für das Lesen der
+                Fachtexte ein. Überprüfen Sie sich auch selbst darauf, ob Sie
+                die Texte gründlich gelesen oder eher überfolgen haben.
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="mt-2 mb-2"></div>
-          Dieses Feedback war hilfreich:
-          <div class="d-flex flex-row align-items-center">
-            <div
-              class="btn-group"
-              role="group"
-              aria-label="Basic radio toggle button group"
-            >
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradioFeedbackMDCYesNo"
-                id="btnradioFeedbackMDCYesNo1"
-                autocomplete="off"
-              />
-              <label
-                class="btn btn-outline-primary"
-                for="btnradioFeedbackMDCYesNo1"
-                >Ja</label
-              >
+        <br />
+        Dieses Feedback deckt sich mit meiner Selbsteinschätzung:
+        <br />
+        <div class="d-flex flex-row align-items-center">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradioFeedbackMDC" id="btnradioFeedbackMDC1"
+              autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btnradioFeedbackMDC1">Gar nicht</label>
 
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradioFeedbackMDCYesNo"
-                id="btnradioFeedbackMDCYesNo2"
-                autocomplete="off"
-              />
-              <label
-                class="btn btn-outline-primary"
-                for="btnradioFeedbackMDCYesNo2"
-                >Nein</label
-              >
-            </div>
+            <input type="radio" class="btn-check" name="btnradioFeedbackMDC" id="btnradioFeedbackMDC3"
+              autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btnradioFeedbackMDC3">Teils / teils</label>
+
+            <input type="radio" class="btn-check" name="btnradioFeedbackMDC" id="btnradioFeedbackMDC2"
+              autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btnradioFeedbackMDC2">Sehr</label>
           </div>
+        </div>
 
-          <div class="card-body">
-            <h5 class="card-header">
-              Ihre Pläne zur Verbesserung Ihrer akademischen Lesefähigkeit
-            </h5>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="floatingTextarea2"
-                style="height: 100px"
-              ></textarea>
-              <label for="floatingTextarea2"
-                >Schreiben Sie hier bitte auf, welche Pläne Sie für das
-                Verbessern Ihres akademischen Lesens haben.</label
-              >
-            </div>
-            <button
-              type="button"
-              class="mt-3 btn btn-primary"
-              value="Abschicken"
-            >
-              Speichern
-            </button>
+        <div class="mt-2 mb-2"></div>
+        Dieses Feedback war hilfreich:
+        <div class="d-flex flex-row align-items-center">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradioFeedbackMDCYesNo" id="btnradioFeedbackMDCYesNo1"
+              autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btnradioFeedbackMDCYesNo1">Ja</label>
+
+            <input type="radio" class="btn-check" name="btnradioFeedbackMDCYesNo" id="btnradioFeedbackMDCYesNo2"
+              autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btnradioFeedbackMDCYesNo2">Nein</label>
           </div>
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-header">
+            Ihre Pläne zur Verbesserung Ihrer akademischen Lesefähigkeit
+          </h5>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Schreiben Sie hier bitte auf, welche Pläne Sie für das
+              Verbessern Ihres akademischen Lesens haben.</label>
+          </div>
+          <button type="button" class="mt-3 btn btn-primary" value="Abschicken">
+            Speichern
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- footer content -->
-    <footer style="margin-left: 0px">
-      <div class="pull-right">
-        <a href="index.html">DiFA</a>
-      </div>
-      <div class="clearfix"></div>
-    </footer>
-    <!-- /footer content -->
+  <!-- footer content -->
+  <footer style="margin-left: 0px">
+    <div class="pull-right">
+      <a href="index.html">DiFA</a>
+    </div>
+    <div class="clearfix"></div>
+  </footer>
+  <!-- /footer content -->
 
-    <script src="./files/chart.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="./files/bootstrap.min.js"></script>
+  <script src="./files/chart.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./files/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="./files/echarts.common.min.js"></script>
-    <script type="text/javascript" src="./files/echarts.min.js"></script>
-    <script src="files/shared.js"></script>
-    <script src="./files/dashboard.js"></script>
-    <!-- <script src="./files/barChartLE.js"></script>
+  <script type="text/javascript" src="./files/echarts.common.min.js"></script>
+  <script type="text/javascript" src="./files/echarts.min.js"></script>
+  <script src="files/shared.js"></script>
+  <script src="./files/dashboard.js"></script>
+  <!-- <script src="./files/barChartLE.js"></script>
   <script src="./files/radarChartLE.js"></script>
   <script src="./files/polarChartMultipleLE.js"></script>
   <script src="./files/radarJS.js"></script>
   <script src="./files/BarReading_Donut.js.download"></script>
   <script src="./files/barChartReading.js"></script> -->
-    <script>
-      redrawDashboard(2);
-    </script>
-  </body>
+  <script>
+    redrawDashboard(2);
+  </script>
+</body>
+
 </html>
